@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юлия Гомаюнова](https://up.htmlacademy.ru/adaptive/8/user/253669).
-* Наставник: `Неизвестно`.
+* Наставник: `Александр Половников`.
 
 ---
 
