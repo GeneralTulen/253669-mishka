@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Form mobile</title>
+  <link rel="stylesheet" href="#">
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <div class="page-header__logo"></div>
+      <button class="page-header__hamburger-menu"></button>
+    </header>
+    <main class="content">
+      <h2 class="title title--grey-bg">Вязание на заказ</h2>
+      <p class="content__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form action="index.php" class="form">
+        <div class="separator">
+          <h3 class="separator__title">ТИП</h3>
+          <hr>
+        </div>
+        <input type="radio" class="input input--type-checkbox" checked>
+        <label>Аксессуар для интерьера</label>
+        <input type="radio" class="input input--type-checkbox">
+        <label>Детская игрушка</label>
+        <div class="separator">
+          <h3 class="separator__title">ЦВЕТ</h3>
+          <hr>
+        </div>
+        <div class="checkboxes">
+          <div class="checkboxes__elem">
+            <input class="input input--type-checkbox" type="checkbox" checked>
+            <lable class="checkboxes__lable">Белый</lable>
+          </div>
+          <div class="checkboxes__elem">
+            <input class="input input--type-checkbox" type="checkbox" checked>
+            <lable class="checkboxes__lable">Серый</lable>
+          </div>
+          <div class="checkboxes__elem">
+            <input class="input input--type-checkbox" type="checkbox">
+            <lable class="checkboxes__lable">"Тиффани"</lable>
+          </div>
+          <div class="checkboxes__elem">
+            <input class="input input--type-checkbox" type="checkbox">
+            <lable class="checkboxes__lable">Чёрный</lable>
+          </div>
+          <div class="checkboxes__elem">
+            <input class="input input--type-checkbox" type="checkbox">
+            <lable class="checkboxes__lable">Розовый</lable>
+          </div>
+          <div class="checkboxes__elem">
+            <input class="input input--type-checkbox" type="checkbox">
+            <lable class="checkboxes__lable">Оранжевый</lable>
+          </div>
+        </div>
+        <div class="separator">
+          <h3 class="separator__title form-input">ФИО</h3>
+          <hr>
+        </div>
+        <lable class="form-input__lable">Имя:</lable>
+        <input class="input input-type--text" type="text" placeholder="Введите ваше имя">
+        <lable class="form-input__lable">Фамилия:</lable>
+        <input class="input input-type--text" type="text" placeholder="Укажите фамилию">
+        <lable class="form-input__lable">Отчество:</lable>
+        <input class="input input-type--text" type="text" placeholder="Отчество, если желаете">
+        <div class="separator">
+          <h3 class="separator__title">ТЕЛ</h3>
+          <hr>
+        </div>
+        <div class="input-icon-box">
+          <input class="input" type="tel" placeholder="+7 XXX XX XX">
+          <span class="icon icon-type--phone"></span>
+        </div>
+        <div class="separator">
+          <h3 class="separator__title">E-MAIL</h3>
+          <hr>
+        </div>
+         <div class="input-icon-box">
+          <input class="input" type="tel" placeholder="Ваш Email">
+          <span class="icon icon-type--email"></span>
+        </div>
+        <div class="separator">
+          <h3 class="separator__title">ДОП</h3>
+          <hr>
+        </div>
+        <input type="textarea" class="input input-type--textarea" placeholder="Опишите все ваши пожелания к заказу">
+        <lable class="form-input__lable">Все поля обязательны для заполнения</lable>
+        <button type="submit" class="form__submit">ОТПРАВИТЬ ЗАКАЗ</button>
+        </form>
+      <footer class="page-footer">
+        <div class="page-footer__grey-bg">
+          <div class="social-links">
+            <a href="#" class="icon icon-type__inst"></a>
+            <a href="#" class="icon icon-type__facebook"></a>
+            <a href="#" class="icon icon-type__twitter"><a/>
+          </div>
+          <div class="page-footer__bottom">
+            <p class="page-footer__developped">Разработано</p>
+            <span class="icon icon-type--html-academy"></span>
+          </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
