@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Form mobile</title>
-  <link rel="stylesheet" href="#">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="container">
@@ -20,10 +21,10 @@
           <h3 class="separator__title">ТИП</h3>
           <hr>
         </div>
-        <input type="radio" class="input input--type-checkbox" checked>
-        <label>Аксессуар для интерьера</label>
-        <input type="radio" class="input input--type-checkbox">
-        <label>Детская игрушка</label>
+        <input type="radio" class="input input--type-radio" checked>
+        <label class="form__label-radio" >Аксессуар для интерьера</label>
+        <input type="radio" class="input input--type-radio">
+        <label class="form__label-radio" >Детская игрушка</label>
         <div class="separator">
           <h3 class="separator__title">ЦВЕТ</h3>
           <hr>
@@ -31,38 +32,38 @@
         <div class="checkboxes">
           <div class="checkboxes__elem">
             <input class="input input--type-checkbox" type="checkbox" checked>
-            <lable class="checkboxes__lable">Белый</lable>
+            <lable class="form__lable-checkbox">Белый</lable>
           </div>
           <div class="checkboxes__elem">
             <input class="input input--type-checkbox" type="checkbox" checked>
-            <lable class="checkboxes__lable">Серый</lable>
+            <lable class="form__lable-checkbox">Серый</lable>
           </div>
           <div class="checkboxes__elem">
             <input class="input input--type-checkbox" type="checkbox">
-            <lable class="checkboxes__lable">"Тиффани"</lable>
+            <lable class="form__lable-checkbox">"Тиффани"</lable>
           </div>
           <div class="checkboxes__elem">
             <input class="input input--type-checkbox" type="checkbox">
-            <lable class="checkboxes__lable">Чёрный</lable>
+            <lable class="form__lable-checkbox">Чёрный</lable>
           </div>
           <div class="checkboxes__elem">
             <input class="input input--type-checkbox" type="checkbox">
-            <lable class="checkboxes__lable">Розовый</lable>
+            <lable class="form__lable-checkbox">Розовый</lable>
           </div>
           <div class="checkboxes__elem">
             <input class="input input--type-checkbox" type="checkbox">
-            <lable class="checkboxes__lable">Оранжевый</lable>
+            <lable class="form__lable-checkbox">Оранжевый</lable>
           </div>
         </div>
         <div class="separator">
           <h3 class="separator__title form-input">ФИО</h3>
           <hr>
         </div>
-        <lable class="form-input__lable">Имя:</lable>
+        <lable class="form__lable-text">Имя:</lable>
         <input class="input input-type--text" type="text" placeholder="Введите ваше имя">
-        <lable class="form-input__lable">Фамилия:</lable>
+        <lable class="form__lable-text">Фамилия:</lable>
         <input class="input input-type--text" type="text" placeholder="Укажите фамилию">
-        <lable class="form-input__lable">Отчество:</lable>
+        <lable class="form__lable-text">Отчество:</lable>
         <input class="input input-type--text" type="text" placeholder="Отчество, если желаете">
         <div class="separator">
           <h3 class="separator__title">ТЕЛ</h3>
@@ -85,7 +86,7 @@
           <hr>
         </div>
         <input type="textarea" class="input input-type--textarea" placeholder="Опишите все ваши пожелания к заказу">
-        <lable class="form-input__lable">Все поля обязательны для заполнения</lable>
+        <lable class="form__text">Все поля обязательны для заполнения</lable>
         <button type="submit" class="form__submit">ОТПРАВИТЬ ЗАКАЗ</button>
         </form>
       <footer class="page-footer">
