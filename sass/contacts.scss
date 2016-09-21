@@ -1,5 +1,24 @@
-.contacts__text {
+.contacts {
+  width: 100%;
+}
 
+.contacts__details {
+  @include content
+
+  @include desktop {
+    width: 50%;
+    float: left;
+  }
+
+}
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.contacts__text {
   font-size: 15px;
   line-height: 20px;
   color: $grey-text;

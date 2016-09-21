@@ -10,3 +10,16 @@
     @content;
   }
 }
+
+@mixin content {
+  width: 290px;
+  margin: 0 auto;
+
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width}) {
+    width: $tablet-width - 55px;
+  }
+
+  @media (min-width: #{$desktop-width}) {
+    width: $desktop-width - 45px;
+    }
+}

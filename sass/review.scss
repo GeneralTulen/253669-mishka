@@ -1,6 +1,20 @@
+.review {
+  height: 460px;
+
+  @include tablet {
+    background: url(../img/review@1x.jpg) no-repeat;
+  }
+
+  @include desktop {
+    background: url(../img/review@1x.jpg) no-repeat;
+  }
+}
+
+.review__content {
+  @include content
+}
 
 .review__text, .review__contact {
-
   font-size: 15px;
   line-height: 20px;
   color: $grey-text;

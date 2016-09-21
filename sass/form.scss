@@ -1,3 +1,7 @@
+.form {
+  @include content
+}
+
 .form__label-radio {
   font-weight: bold;
   font-size: 17px;

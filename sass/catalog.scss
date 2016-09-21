@@ -1,14 +1,40 @@
 
-.catalog__elem-title{
+.catalog__title-block {
+  background-color: $bg-light-grey;
+  height: 180px;
+  float: left;
+  width: 100%;
+}
+
+.catalog__elem {
+  @include content
+
+  @include desktop {
+    float: left;
+    width: 33%;
+  }
+}
+
+.catalog__elem-title {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
 }
 
-.catalog__elem-descripxion{
+.catalog__elem-descripxion {
   font-size: 13px;
   line-height: 30px;
   color: $grey-text;
+}
+
+
+.catalog__elem-title, .catalog__elem-description, .price-b, hr {
+  @include tablet {
+    float: right;
+  }
+  @include desktop {
+    // display: inline;
+  }
 }
 
 .price {
@@ -16,3 +42,4 @@
   font-size: 15px;
   line-height: 24px;
 }
+

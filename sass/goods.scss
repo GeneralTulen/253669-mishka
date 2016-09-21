@@ -1,7 +1,47 @@
 .goods {
-
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
   color: white;
+  position: relative;
+  top: 230px;
+  margin: 0px;
+
+  @include tablet {
+    @include content
+    top: 570px;
+  }
+
+  @include desktop {
+    @include content
+    top: 570px;
+  }
+}
+
+.goods__interior {
+  background-color: $light-green;
+}
+
+.goods__toys {
+  background-color: $dark-green;
+}
+
+.goods__interior, .goods__toys {
+  height: 100px;
+  width: 100%;
+
+    @include tablet {
+      float: left;
+      width: 50%
+  }
+
+    @include desktop {
+      width: 50%;
+      float: left;
+  }
+}
+
+.goods__text {
+  float: left;
+  padding-left: 20px;
 }
