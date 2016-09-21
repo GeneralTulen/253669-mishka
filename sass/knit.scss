@@ -1,0 +1,14 @@
+
+.knit {
+  background-color: $bg-light-grey;
+  height: 180px;
+  float: left;
+  width: 100%;
+}
+
+.knit__text {
+  font-size: 13px;
+  line-height: 24px;
+  color: $grey-text;
+  @include content
+}

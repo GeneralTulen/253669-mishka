@@ -1,11 +1,27 @@
 .title {
-
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
 }
 
-.title--grey-bg {
-  background-color: $bg-light-grey;
+.title--top{
+  text-align: center;
+  position: relative;
+  top: 100px;
+  margin: 0 auto;
+  width: 80%;
+
+  @include tablet {
+    width: 100%;
+  }
+
+  @include desktop {
+    width: 100%;
+  }
 }
 
+.title--grey-bg {
+  text-align: center;
+  position: relative;
+  top: 40px;
+}

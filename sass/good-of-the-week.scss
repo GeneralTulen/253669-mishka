@@ -1,6 +1,9 @@
 
-.good-of-the-week__title {
+.good-of-the-week {
+  @include content
+}
 
+.good-of-the-week__title {
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;
@@ -8,14 +11,12 @@
 }
 
 .good-of-the-week__text {
-
   font-size: 15px;
   line-height: 20px;
 
 }
 
 .good-of-the-week__price-text {
-
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
@@ -23,7 +24,6 @@
 }
 
 .good-of-the-week__order {
-
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;

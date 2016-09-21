@@ -3,19 +3,37 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <title>Form mobile</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="container">
     <header class="page-header">
-      <div class="page-header__logo"></div>
-      <button class="page-header__hamburger-menu"></button>
+      <nav class="page-header__nav">
+          <ul class="page-header__nav-list">
+            <li class="page-header__nav-elem"><a href="#" class="page-header__nav-link">Каталог товаров</a></li>
+            <li class="page-header__nav-elem"><a href="#" class="page-header__nav-link">Вязание на заказ</a></li>
+          </ul>
+          <img class="page-header__logo" src="img/logo.png" alt="#">
+          <a href="#" class="page-header__search">Search</a>
+          <a href="#" class="page-header__basket">Корзина: пока пуста</a>
+          <button class="page-header__hamburger-menu"></button>
+        </nav>
     </header>
-    <main class="content">
-      <h2 class="title title--grey-bg">Вязание на заказ</h2>
-      <p class="content__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+    <main>
+      <div class="knit">
+        <div class="under-header-list">
+            <a href="#" class="under-header-list__elem under-header-list__elem--bold">Новые поступления</a>
+            <a href="#" class="under-header-list__elem under-header-list__elem--bold">Распродажа</a>
+            <a href="#" class="under-header-list__elem under-header-list__elem--regular">Бесплатная доставка по России</a>
+          </div>
+        <h2 class="title title--grey-bg">Вязание на заказ</h2>
+      </div>
+        <p class="knit__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form action="index.php" class="form">
         <div class="separator">
           <h3 class="separator__title">ТИП</h3>

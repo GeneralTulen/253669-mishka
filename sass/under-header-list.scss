@@ -1,0 +1,37 @@
+
+.under-header-list {
+  @include content
+}
+
+.under-header-list__elem {
+  font-size: 15px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.under-header-list__elem--bold {
+  display: none;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: inline-block;
+    font-weight: bold;
+  }
+}
+
+.under-header-list__elem--regular {
+  display: none;
+
+  @include tablet {
+    display: inline-block;
+    float: right;
+  }
+
+  @include desktop {
+    display: inline-block;
+    float: right;
+  }
+}
