@@ -2,9 +2,28 @@
   @include content
 }
 
+.about-us__description {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .about-us__text {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 20px;
-  color: $grey-text;
+  font-weight: bold;
+
+  @include tablet {
+    width: 50%;
+  }
+
+  @include desktop {
+    width: 50%;
+  }
 }

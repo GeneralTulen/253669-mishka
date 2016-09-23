@@ -2,21 +2,32 @@
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
+  margin: 0;
+  @include tablet {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  @include desktop {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .title--top{
   text-align: center;
-  position: relative;
-  top: 100px;
   margin: 0 auto;
-  width: 80%;
+  padding-top: 80px;
 
   @include tablet {
-    width: 100%;
+    padding-top: 170px;
+    font-size: 43px;
+    line-height: 50px;
   }
 
   @include desktop {
-    width: 100%;
+    padding-top: 170px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 

@@ -1,27 +1,161 @@
 
+// .page-header {
+//   height: 80px;
+//   display: flex;
+//   align-items: center;
+//   border-bottom: 1px solid $border-color;
+
+//   @include tablet {
+//     height: 90px;
+//     display: flex;
+//   }
+
+//   @include desktop {
+//     height: 90px;
+//     display: flex;
+//     justify-content: space-between;
+//   }
+// }
+
+// .page-header__nav-link, .page-header__search, .page-header__basket {
+//   text-decoration: none;
+// }
+
+// .page-header__nav-link {
+//   color: black;
+// }
+
+// .page-header__nav {
+//   @include content
+//   display: flex;
+//   // width: 100%;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+
+// .page-header__search, .page-header__basket {
+//   display: none;
+
+//   @include tablet {
+//     display: flex;
+//   }
+
+//   @include desktop {
+//     display: flex;
+//   }
+// }
+
+// .page-header__basket {
+//   font-size: 17px;
+//   font-weight: bold;
+//   line-height: 24px;
+//   color: black;
+// }
+
+// .page-header__nav-list{
+//   display: none;
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+//   justify-content: space-between;
+//   font-weight: bold;
+//   line-height: 24px;
+
+//   @include tablet {
+//     width: 305px;
+//     display: flex;
+//     margin-top: 140px;
+//     // margin-left: -120px;
+//     font-size: 15px;
+//   }
+
+//   @include desktop {
+//     width: 370px;
+//     display: flex;
+//     font-size: 17px;
+//   }
+// }
+
+// .page-header__logo-mobile {
+//   background: url(../img/logo.png) no-repeat;
+//   padding: 20px 50px;
+
+//   @include tablet {
+//     display: none;
+//   }
+
+//   @include desktop {
+//     display: none;
+//   }
+// }
+
+// .page-header__logo-tablet {
+//   @include tablet {
+//     background: url(../img/logo-tablet.png) no-repeat;
+//     padding: 25px 60px;
+//   }
+// }
+
+// .page-header__logo-desktop {
+//   @include desktop {
+//     background: url(../img/logo-desktop.png) no-repeat;
+//     padding: 40px 80px;
+//   }
+// }
+
+// .page-header__hamburger-menu {
+//   width: 50px;
+//   height: 50px;
+//   border-radius: 40px;
+//   float: right;
+
+//   @include tablet {
+//     display: none;
+//   }
+
+//   @include desktop {
+//     display: none;
+//   }
+// }
+
+
 .page-header {
   height: 80px;
-  @include content
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $border-color;
 
   @include tablet {
-    height: 88px;
+    height: 90px;
     display: flex;
   }
 
   @include desktop {
-    height: 88px;
+    height: 90px;
     display: flex;
     justify-content: space-between;
-    }
+  }
+}
+
+.page-header__content {
+  @include content
+  display: flex;
+  align-items: center;
 }
 
 .page-header__nav-link, .page-header__search, .page-header__basket {
   text-decoration: none;
 }
+
+.page-header__nav-link {
+  color: black;
+}
+
 .page-header__nav {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 
 .page-header__search, .page-header__basket {
@@ -36,23 +170,62 @@
   }
 }
 
+.page-header__basket {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+  color: black;
+}
+
 .page-header__nav-list{
   display: none;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  font-weight: bold;
+  line-height: 24px;
 
   @include tablet {
-    display: block;
-    position: relative;
-    top: 80px;
+    width: 305px;
+    display: flex;
+    margin-top: 145px;
+    margin-left: -115px;
+    font-size: 15px;
   }
 
   @include desktop {
-    display: block;
+    width: 370px;
+    display: flex;
+    font-size: 17px;
   }
 }
 
-.page-header__nav-elem {
-    display: inline;
+.page-header__logo-mobile {
+  background: url(../img/logo.png) no-repeat;
+  padding: 20px 50px;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.page-header__logo-tablet {
+  @include tablet {
+    background: url(../img/logo-tablet.png) no-repeat;
+    padding: 25px 60px;
+  }
+}
+
+.page-header__logo-desktop {
+  @include desktop {
+    background: url(../img/logo-desktop.png) no-repeat;
+    padding: 40px 80px;
+  }
 }
 
 .page-header__hamburger-menu {
@@ -69,5 +242,3 @@
     display: none;
   }
 }
-
-

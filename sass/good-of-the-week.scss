@@ -1,19 +1,103 @@
 
 .good-of-the-week {
   @include content
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.h2__title {
+  @include tablet {
+  order: 1;
+  border: 1px solid red;
+  }
+}
+
+.good__title {
+  @include tablet {
+  order: 2;
+  border: 1px solid red;
+  }
 }
 
 .good-of-the-week__title {
   font-weight: bold;
   font-size: 17px;
-  line-height: 16px;
+  line-height: 33px;
   color: $light-green;
+  margin: 0;
 }
 
-.good-of-the-week__text {
+.test__p {
+  @include tablet {
+  width: 50%;
+  height: 60px;
+  border: 1px solid red;
+  // order: 1;
+  order: 3;
+  }
+}
+
+.test__img {
+  @include tablet {
+  border: 1px solid red;
+  width: 40%;
+  // order: 2;
+  order: 4;
+  }
+}
+
+.good-of-the-week__option, .good-of-the-week__value {
   font-size: 15px;
   line-height: 20px;
+}
 
+.good-of-the-week__order {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: $grey-text;
+}
+
+.good-of-the-week__details {
+  flex-wrap: wrap;
+  width: 280px;
+  height: 120px;
+  @include tablet {
+  border: 1px solid red;
+    // order: 3;
+    width: 40%;
+    order: 5;
+  }
+}
+
+.good-of-the-week__details-elem {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $bg-light-grey;
+  height: 40px;
+}
+
+.good-of-the-week__option {
+  width: 90px;
+}
+
+.good-of-the-week__value {
+  width: 150px;
+}
+
+.good-of-the-week__price {
+  display: flex;
+
+  @include tablet {
+  border: 1px solid red;
+  width: 40%;
+  // order: 4;
+  order: 6;
+  }
 }
 
 .good-of-the-week__price-text {
@@ -24,8 +108,10 @@
 }
 
 .good-of-the-week__order {
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 16px;
-  color: $grey-text;
+  @include tablet {
+  height: 50px;
+  width: 40%;
+  // order: 5;
+  order: 7;
+  }
 }

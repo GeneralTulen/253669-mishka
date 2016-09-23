@@ -1,21 +1,45 @@
 
 .page-footer__grey-bg {
   background-color: $bg-light-grey;
-  @include content
 }
 
 .page-footer__write-to-us-b {
-  @include content
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include tablet {
+    height: 170px;
+  }
 }
 
 .page-footer__write-to-us {
+  margin: 0 auto;
   font-weight: bold;
   font-size: 18px;
   line-height: 16px;
   color: $grey-text;
+  text-decoration: none;
+}
+
+.page-footer__bottom {
+  height: 80px;
+  display: flex;
+  align-items: center;
+
+  @include tablet {
+    height: 145px;
+  }
+
+  @include desktop {
+    height: 145px;
+  }
 }
 
 .page-footer__developped {
+  @include content
+  text-align: center;
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;
