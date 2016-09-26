@@ -6,6 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 200px;
   }
 }
 
@@ -36,17 +37,16 @@
   width: 50%;
   height: 60px;
   border: 1px solid red;
-  // order: 1;
   order: 3;
   }
 }
 
 .test__img {
   @include tablet {
+  position: absolute;
+  right: 15%;
+  top: 925px;
   border: 1px solid red;
-  width: 40%;
-  // order: 2;
-  order: 4;
   }
 }
 
@@ -63,13 +63,11 @@
 }
 
 .good-of-the-week__details {
-  flex-wrap: wrap;
   width: 280px;
   height: 120px;
   @include tablet {
   border: 1px solid red;
-    // order: 3;
-    width: 40%;
+    width: 50%;
     order: 5;
   }
 }
@@ -94,8 +92,7 @@
 
   @include tablet {
   border: 1px solid red;
-  width: 40%;
-  // order: 4;
+  width: 50%;
   order: 6;
   }
 }
@@ -110,8 +107,7 @@
 .good-of-the-week__order {
   @include tablet {
   height: 50px;
-  width: 40%;
-  // order: 5;
+  width: 50%;
   order: 7;
   }
 }
