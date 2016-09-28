@@ -1,25 +1,83 @@
 .contacts {
   width: 100%;
+
+  @include desktop {
+    height: 630px;
+  }
 }
 
 .contacts__details {
   @include content
+    display: flex;
+    flex-wrap: wrap;
+    padding: 45px 0 40px;
 
+  @include tablet {
+    padding: 70px 0 60px;
+
+  }
   @include desktop {
     width: 50%;
-    float: left;
+    margin: 0;
+    padding: 150px 0 100px 225px;
   }
+}
 
+.contacts__info {
+  @include tablet {
+    display: flex;
+    width: 100%;
+  }
 }
 
 .contacts__title {
+  width: 100%;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
+  margin: 0;
+
+  @include tablet {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @include desktop {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
-.contacts__text {
+.contacts__elem {
+  display: flex;
+  width: 100%;
+}
+
+.contacts__option, .contacts__value {
   font-size: 15px;
   line-height: 20px;
   color: $grey-text;
+  @include tablet {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @include desktop {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+.contacts__option {
+  width: 75px;
+}
+
+.contacts__value {
+  width: 145px;
+  @include tablet {
+    width: 230px;
+  }
+    @include desktop {
+    width: 230px;
+  }
 }

@@ -1,16 +1,28 @@
 
+.page-footer {
+  @include desktop {
+    position: relative;
+  }
+}
+
 .page-footer__grey-bg {
   background-color: $bg-light-grey;
+
+  @include tablet {
+    // height: 170px;
+  }
 }
 
 .page-footer__write-to-us-b {
-  height: 130px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include content
+    text-align: center;
 
-  @include tablet {
-    height: 170px;
+  @include desktop {
+    width: 228px;
+    position: absolute;
+    top: 400px;
+    text-align: left;
+    padding: 0 0 0 225px;
   }
 }
 
@@ -20,8 +32,16 @@
   font-size: 18px;
   line-height: 16px;
   color: $grey-text;
-  text-decoration: none;
+  width: 100%;
+  padding: 18px 0px;
+  margin: 40px 0;
+
+  @include tablet {
+    width: 228px;
+  }
+
 }
+
 
 .page-footer__bottom {
   height: 80px;
@@ -44,3 +64,4 @@
   font-size: 19px;
   line-height: 18px;
 }
+

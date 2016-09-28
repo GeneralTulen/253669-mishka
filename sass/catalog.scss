@@ -2,16 +2,57 @@
 .catalog__title-block {
   background-color: $bg-light-grey;
   height: 180px;
-  float: left;
   width: 100%;
+  margin-bottom: 30px;
+  @include tablet {
+    height: 215px;
+  }
+    @include desktop {
+    height: 235px;
+  }
+}
+
+.catalog__elements{
+  @include desktop {
+    display: flex;
+  }
 }
 
 .catalog__elem {
   @include content
 
+  @include tablet {
+    display: flex;
+    height: 335px;
+    margin-bottom: 55px;
+  }
+
   @include desktop {
-    float: left;
-    width: 33%;
+    width: 314px;
+  }
+}
+
+.catalog__elem-pic {
+  display: flex;
+  @include tablet {
+    height: 335px;
+  }
+  @include desktop {
+    width: 100%;
+  }
+}
+
+.catalog__description {
+  padding: 0 20px;
+  margin: 0 0 30px 0;
+  border: 1px solid $bg-light-grey;
+
+  @include tablet {
+    width: 50%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
   }
 }
 
@@ -19,27 +60,14 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+  margin: 30px 0 0 0;
 }
 
-.catalog__elem-descripxion {
+.catalog__parameters {
   font-size: 13px;
   line-height: 30px;
   color: $grey-text;
 }
 
-
-.catalog__elem-title, .catalog__elem-description, .price-b, hr {
-  @include tablet {
-    float: right;
-  }
-  @include desktop {
-    // display: inline;
-  }
+.catalog__parameters-b {
 }
-
-.price {
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 24px;
-}
-

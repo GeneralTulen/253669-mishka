@@ -13,99 +13,141 @@
 <body>
   <div class="container">
     <header class="page-header">
+     <div class="page-header__content">
+      <span class="page-header__logo-tablet"></span>
       <nav class="page-header__nav">
-          <ul class="page-header__nav-list">
-            <li class="page-header__nav-elem"><a href="#" class="page-header__nav-link">Каталог товаров</a></li>
-            <li class="page-header__nav-elem"><a href="#" class="page-header__nav-link">Вязание на заказ</a></li>
-          </ul>
-          <img class="page-header__logo" src="img/logo.png" alt="#">
-          <a href="#" class="page-header__search">Search</a>
-          <a href="#" class="page-header__basket">Корзина: пока пуста</a>
-          <button class="page-header__hamburger-menu"></button>
-        </nav>
+       <ul class="page-header__nav-list">
+         <li class="page-header__nav-elem"><a href="#" class="page-header__nav-link">Каталог товаров</a></li>
+         <li class="page-header__nav-elem"><a href="#" class="page-header__nav-link">Вязание на заказ</a></li>
+       </ul>
+         <span class="page-header__logo-mobile"></span>
+         <span class="page-header__logo-desktop"></span>
+         <a href="#" class="page-header__search">Search</a>
+         <a href="#" class="page-header__basket">Корзина: пока пуста</a>
+       <button class="page-header__hamburger-menu"></button>
+      </nav>
+      </div>
     </header>
     <main>
       <div class="knit">
         <div class="under-header-list">
+          <div class="under-header-list__left-side">
             <a href="#" class="under-header-list__elem under-header-list__elem--bold">Новые поступления</a>
             <a href="#" class="under-header-list__elem under-header-list__elem--bold">Распродажа</a>
-            <a href="#" class="under-header-list__elem under-header-list__elem--regular">Бесплатная доставка по России</a>
           </div>
+          <a href="#" class="under-header-list__elem under-header-list__elem--regular">Бесплатная доставка по России</a>
+        </div>
         <h2 class="title title--grey-bg">Вязание на заказ</h2>
       </div>
-        <p class="knit__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form action="index.php" class="form">
-        <div class="separator">
-          <h3 class="separator__title">ТИП</h3>
-          <hr>
-        </div>
-        <input type="radio" class="input input--type-radio" checked>
-        <label class="form__label-radio" >Аксессуар для интерьера</label>
-        <input type="radio" class="input input--type-radio">
-        <label class="form__label-radio" >Детская игрушка</label>
-        <div class="separator">
-          <h3 class="separator__title">ЦВЕТ</h3>
-          <hr>
-        </div>
-        <div class="checkboxes">
-          <div class="checkboxes__elem">
-            <input class="input input--type-checkbox" type="checkbox" checked>
-            <lable class="form__lable-checkbox">Белый</lable>
-          </div>
-          <div class="checkboxes__elem">
-            <input class="input input--type-checkbox" type="checkbox" checked>
-            <lable class="form__lable-checkbox">Серый</lable>
-          </div>
-          <div class="checkboxes__elem">
-            <input class="input input--type-checkbox" type="checkbox">
-            <lable class="form__lable-checkbox">"Тиффани"</lable>
-          </div>
-          <div class="checkboxes__elem">
-            <input class="input input--type-checkbox" type="checkbox">
-            <lable class="form__lable-checkbox">Чёрный</lable>
-          </div>
-          <div class="checkboxes__elem">
-            <input class="input input--type-checkbox" type="checkbox">
-            <lable class="form__lable-checkbox">Розовый</lable>
-          </div>
-          <div class="checkboxes__elem">
-            <input class="input input--type-checkbox" type="checkbox">
-            <lable class="form__lable-checkbox">Оранжевый</lable>
+        <p class="knit__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+
+        <div class="form__block ">
+          <div class="form__block-content">
+            <div class="separator">
+              <h3 class="separator__title">ТИП</h3>
+              <span class="separator__line"></span>
+            </div>
+            <div class="form__radio-buttons">
+              <input type="radio" class="input input--type-radio" checked>
+              <label class="form__label-radio" >Аксессуар для интерьера</label>
+              <input type="radio" class="input input--type-radio">
+              <label class="form__label-radio" >Детская игрушка</label>
+            </div>
           </div>
         </div>
-        <div class="separator">
-          <h3 class="separator__title form-input">ФИО</h3>
-          <hr>
+
+        <div class="form__block form__block--grey-bg">
+          <div class="form__block-content">
+            <div class="separator">
+                <h3 class="separator__title">ЦВЕТ</h3>
+                <span class="separator__line"></span>
+              </div>
+            <div class="checkboxes">
+              <div class="checkboxes__elem">
+                <input class="input input--type-checkbox" type="checkbox" checked>
+                <lable class="form__lable-checkbox">Белый</lable>
+              </div>
+              <div class="checkboxes__elem">
+                <input class="input input--type-checkbox" type="checkbox" checked>
+                <lable class="form__lable-checkbox">Серый</lable>
+              </div>
+              <div class="checkboxes__elem">
+                <input class="input input--type-checkbox" type="checkbox">
+                <lable class="form__lable-checkbox">"Тиффани"</lable>
+              </div>
+              <div class="checkboxes__elem">
+                <input class="input input--type-checkbox" type="checkbox">
+                <lable class="form__lable-checkbox">Чёрный</lable>
+              </div>
+              <div class="checkboxes__elem">
+                <input class="input input--type-checkbox" type="checkbox">
+                <lable class="form__lable-checkbox">Розовый</lable>
+              </div>
+              <div class="checkboxes__elem">
+                <input class="input input--type-checkbox" type="checkbox">
+                <lable class="form__lable-checkbox">Оранжевый</lable>
+              </div>
+            </div>
+          </div>
         </div>
-        <lable class="form__lable-text">Имя:</lable>
-        <input class="input input-type--text" type="text" placeholder="Введите ваше имя">
-        <lable class="form__lable-text">Фамилия:</lable>
-        <input class="input input-type--text" type="text" placeholder="Укажите фамилию">
-        <lable class="form__lable-text">Отчество:</lable>
-        <input class="input input-type--text" type="text" placeholder="Отчество, если желаете">
-        <div class="separator">
-          <h3 class="separator__title">ТЕЛ</h3>
-          <hr>
+
+        <div class="form__block ">
+          <div class="form__block-content">
+            <div class="separator">
+              <h3 class="separator__title form-input">ФИО</h3>
+              <span class="separator__line"></span>
+            </div>
+            <div class="form__personal-info">
+              <lable class="form__lable-text">Имя:</lable>
+              <input class="input input-type--text" type="text" placeholder="Введите ваше имя">
+              <lable class="form__lable-text">Фамилия:</lable>
+              <input class="input input-type--text" type="text" placeholder="Укажите фамилию">
+              <lable class="form__lable-text">Отчество:</lable>
+              <input class="input input-type--text" type="text" placeholder="Отчество, если желаете">
+            </div>
+          </div>
         </div>
-        <div class="input-icon-box">
-          <input class="input" type="tel" placeholder="+7 XXX XX XX">
-          <span class="icon icon-type--phone"></span>
+        <div class="form__block form__block--grey-bg">
+          <div class="form__block-content form__block-content--phone">
+            <div class="separator">
+              <h3 class="separator__title">ТЕЛ</h3>
+              <span class="separator__line"></span>
+            </div>
+            <div class="input-icon-box">
+              <input class="input" type="tel" placeholder="+7 XXX XX XX">
+              <span class="icon icon-type--phone"></span>
+            </div>
+          </div>
         </div>
-        <div class="separator">
-          <h3 class="separator__title">E-MAIL</h3>
-          <hr>
+
+        <div class="form__block form__block--grey-bg">
+          <div class="form__block-content form__block-content--email">
+            <div class="separator">
+              <h3 class="separator__title">E-MAIL</h3>
+              <span class="separator__line"></span>
+            </div>
+            <div class="input-icon-box">
+                <input class="input" type="tel" placeholder="Ваш Email">
+                <span class="icon icon-type--email"></span>
+            </div>
+          </div>
         </div>
-         <div class="input-icon-box">
-          <input class="input" type="tel" placeholder="Ваш Email">
-          <span class="icon icon-type--email"></span>
+        <div class="form__block ">
+        <div class="form__block-content form__block-content--additonal">
+          <div class="separator">
+              <h3 class="separator__title">ДОП</h3>
+              <span class="separator__line"></span>
+            </div>
+            <input type="textarea" class="input input-type--textarea" placeholder="Опишите все ваши пожелания к заказу">
+            </div>
+          </div>
+        <div class="form__block-content form__block-content--footer">
+          <div class="form__footer">
+            <lable class="form__text">Все поля обязательны для заполнения</lable>
+            <button type="submit" class="form__submit">ОТПРАВИТЬ ЗАКАЗ</button>
+          </div>
         </div>
-        <div class="separator">
-          <h3 class="separator__title">ДОП</h3>
-          <hr>
-        </div>
-        <input type="textarea" class="input input-type--textarea" placeholder="Опишите все ваши пожелания к заказу">
-        <lable class="form__text">Все поля обязательны для заполнения</lable>
-        <button type="submit" class="form__submit">ОТПРАВИТЬ ЗАКАЗ</button>
         </form>
       <footer class="page-footer">
         <div class="page-footer__grey-bg">

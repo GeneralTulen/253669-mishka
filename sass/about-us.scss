@@ -1,16 +1,28 @@
 .about-us {
   @include content
+
+  @include tablet {
+    height: 500px;
+  }
+
+  @include desktop {
+    padding: 0 175px;
+    width: 700px;
+  }
 }
 
 .about-us__description {
   @include tablet {
     display: flex;
     flex-wrap: wrap;
+    align-items: stretch;
+    height: 400px;
   }
 
   @include desktop {
     display: flex;
     flex-wrap: wrap;
+    height: 420px;
   }
 }
 

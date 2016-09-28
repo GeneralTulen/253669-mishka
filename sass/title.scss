@@ -8,8 +8,8 @@
     line-height: 50px;
   }
   @include desktop {
-    font-size: 43px;
-    line-height: 50px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
@@ -31,8 +31,30 @@
   }
 }
 
+.title--good-0f-the-week {
+  @include desktop {
+    padding: 70px 0 0 175px;
+  }
+}
+
+.title--about-us {
+  margin: 50px 0;
+}
+
+.title--review {
+  @include tablet {
+    width: 50%;
+  }
+}
+
 .title--grey-bg {
   text-align: center;
   position: relative;
-  top: 40px;
+  top: 70px;
+  @include tablet {
+    top: 25px;
+  }
+  @include desktop {
+    top: 40px;
+  }
 }

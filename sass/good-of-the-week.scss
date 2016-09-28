@@ -1,26 +1,29 @@
 
 .good-of-the-week {
+    border-bottom: 1px solid black;
+    position: relative;
+    padding-bottom: 40px;
+    @include desktop {
+      padding-bottom: 70px;
+    }
+  }
+
+.good-of-the-week__content {
   @include content
 
   @include tablet {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 200px;
+    height: 500px;
   }
-}
 
-.h2__title {
-  @include tablet {
-  order: 1;
-  border: 1px solid red;
-  }
-}
-
-.good__title {
-  @include tablet {
-  order: 2;
-  border: 1px solid red;
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 635px;
+    justify-content: space-between;
   }
 }
 
@@ -29,24 +32,44 @@
   font-size: 17px;
   line-height: 33px;
   color: $light-green;
+  padding-top: 10px;
   margin: 0;
-}
 
-.test__p {
-  @include tablet {
-  width: 50%;
-  height: 60px;
-  border: 1px solid red;
-  order: 3;
+  @include desktop {
+    position: absolute;
+    top: 72px;
+    width: 70px;
+    line-height: 16px;
+    text-align: center;
   }
 }
 
-.test__img {
+.good-of-the-week__text {
+  @include tablet {
+    width: 50%;
+  }
+
+  @include desktop {
+    width: 30%;
+    padding: 0 175px;
+  }
+}
+
+.good-of-the-week__img {
   @include tablet {
   position: absolute;
-  right: 15%;
-  top: 925px;
-  border: 1px solid red;
+  width: 335px;
+  height: 400px;
+  right: 28px;
+  top: 85px;
+  }
+
+  @include desktop {
+    width: 525px;
+    height: 635px;
+    position: absolute;
+    right: 50px;
+    z-index: -1;
   }
 }
 
@@ -55,20 +78,17 @@
   line-height: 20px;
 }
 
-.good-of-the-week__order {
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 16px;
-  color: $grey-text;
-}
 
 .good-of-the-week__details {
-  width: 280px;
   height: 120px;
   @include tablet {
-  border: 1px solid red;
-    width: 50%;
-    order: 5;
+    width: 45%;
+    padding-right: 200px;
+  }
+
+  @include desktop {
+    width: 25%;
+    padding: 0 175px;
   }
 }
 
@@ -89,11 +109,16 @@
 
 .good-of-the-week__price {
   display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 35px 0;
 
   @include tablet {
-  border: 1px solid red;
-  width: 50%;
-  order: 6;
+    width: 51%;
+  }
+  @include desktop {
+    width: 30%;
+    padding: 0 175px;
   }
 }
 
@@ -105,9 +130,21 @@
 }
 
 .good-of-the-week__order {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: $grey-text;
+  width: 100%;
+  padding: 18px 0;
+
   @include tablet {
-  height: 50px;
-  width: 50%;
-  order: 7;
+    height: 50px;
+    width: 50%;
+  }
+
+  @include desktop {
+    height: 50px;
+    width: 290px;
+    margin: 0 175px;
   }
 }

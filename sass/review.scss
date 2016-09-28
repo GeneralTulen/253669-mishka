@@ -1,21 +1,78 @@
 .review {
-  height: 460px;
+  border-bottom: 1px solid black;
+  padding-bottom: 50px;
 
   @include tablet {
     background: url(../img/review@1x.jpg) no-repeat;
+    height: 460px;
+    padding-bottom: 70px;
   }
 
   @include desktop {
     background: url(../img/review@1x.jpg) no-repeat;
+    padding-bottom: 120px;
   }
 }
 
 .review__content {
   @include content
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 80px 0 0;
+  }
+
+  @include desktop {
+    display: flex;
+    width: 875px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 80px 0 100px 175px;
+  }
 }
 
 .review__text, .review__contact {
   font-size: 15px;
   line-height: 20px;
   color: $grey-text;
+}
+
+.review__btn-write {
+  padding: 15px 45px;
+  @include tablet {
+    order: 2;
+  }
+  @include desktop {
+    order: 2;
+  }
+}
+
+.review__text {
+  @include tablet {
+    order: 3;
+  }
+
+  @include desktop {
+    order: 3;
+  }
+}
+
+.review__author-b {
+  @include tablet {
+    order: 4;
+  }
+  @include desktop {
+    order: 4;
+  }
+}
+
+.review__btn-arrow {
+  @include tablet {
+    order: 5;
+  }
+  @include desktop {
+    order: 5;
+  }
 }
