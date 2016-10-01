@@ -1,16 +1,17 @@
 .goods {
   display: flex;
-  padding-top: 170px;
+  padding-top: 120px;
   flex-wrap: wrap;
 
   @include tablet {
     @include content
-    padding-top: 285px;
+    padding-top: 375px;
+    width: 100%;
   }
 
   @include desktop {
     @include content
-    padding: 270px 0 20px;
+    padding: 360px 0px;
   }
 }
 
@@ -20,26 +21,28 @@
 
 .goods__toys {
   background-color: $dark-green;
+  margin-bottom: 40px;
 }
 
 .goods__interior, .goods__toys {
-  font-weight: bold;
+  font-family: opensansbold, opensansbold-two;
   font-size: 19px;
   line-height: 24px;
-  padding-left: 20px;
+  padding-left: 29px;
   color: white;
-  height: 90px;
+  height: 104px;
   width: 100%;
   display: flex;
   align-items: center;
+  text-decoration: none;
 
     @include tablet {
       height: 115px;
-      width: 50%;
+      width: 45.5%;
   }
 
     @include desktop {
       height: 130px;
-      width: 50%;
+      width: 47%;
   }
 }

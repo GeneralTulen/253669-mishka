@@ -9,13 +9,17 @@
   background-color: $bg-light-grey;
 
   @include tablet {
-    // height: 170px;
+
   }
 }
 
 .page-footer__write-to-us-b {
   @include content
-    text-align: center;
+  text-align: center;
+
+  @include tablet {
+    padding: 10px 0 0 0;
+  }
 
   @include desktop {
     width: 228px;
@@ -27,19 +31,25 @@
 }
 
 .page-footer__write-to-us {
-  margin: 0 auto;
-  font-weight: bold;
+  font-family: opensansbold, opensansbold-two;
+  padding: 13px 45px;
   font-size: 18px;
-  line-height: 16px;
-  color: $grey-text;
   width: 100%;
-  padding: 18px 0px;
-  margin: 40px 0;
+  color: $grey-text;
+  border: 2px solid $grey-text;
+  background-color: white;
+  margin: 40px auto;
 
   @include tablet {
-    width: 228px;
+    padding: 13px 0;
+    width: 230px;
   }
 
+  @include desktop {
+    padding: 13px 0;
+    width: 230px;
+    margin: 65px auto;
+  }
 }
 
 

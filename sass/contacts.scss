@@ -10,41 +10,47 @@
   @include content
     display: flex;
     flex-wrap: wrap;
-    padding: 45px 0 40px;
+    padding: 18px 0px;
 
   @include tablet {
-    padding: 70px 0 60px;
+    padding: 70px 0 45px;
 
   }
   @include desktop {
     width: 50%;
     margin: 0;
-    padding: 150px 0 100px 225px;
+    padding: 110px 0 100px 225px;
   }
 }
 
 .contacts__info {
   @include tablet {
+    padding: 30px 0 0 0;
+    align-items: flex-start;
     display: flex;
     width: 100%;
+  }
+  @include desktop {
+    padding: 0 0 50px 0;
   }
 }
 
 .contacts__title {
+  font-family: opensansbold, opensansbold-two;
   width: 100%;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
-  margin: 0;
 
   @include tablet {
     font-size: 43px;
     line-height: 50px;
+    margin: 0;
   }
 
   @include desktop {
     font-size: 53px;
-    line-height: 57px;
+    line-height: 30px;
   }
 }
 
@@ -55,7 +61,7 @@
 
 .contacts__option, .contacts__value {
   font-size: 15px;
-  line-height: 20px;
+  line-height: 30px;
   color: $grey-text;
   @include tablet {
     font-size: 17px;
@@ -80,4 +86,13 @@
     @include desktop {
     width: 230px;
   }
+}
+
+.contacts__elem--email {
+  align-items: center;
+}
+
+.contacts__value--email {
+  text-decoration: none;
+  width: 180px;
 }

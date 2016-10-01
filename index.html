@@ -6,9 +6,8 @@
     <meta name="viewport" content="widivh=device-widivh,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <title>Main mobile</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -24,8 +23,29 @@
            <span class="page-header__logo-desktop"></span>
            <a href="#" class="page-header__search">Search</a>
            <a href="#" class="page-header__basket">Корзина: пока пуста</a>
-         <button class="page-header__hamburger-menu"></button>
         </nav>
+
+        <div class="nav-menu-mobile">
+          <div class="hamburger">
+            <div class="hamburger__left"></div>
+            <div class="hamburger__right"></div>
+          </div>
+          <ul class="toggle-menu">
+            <a href="#" class="toggle-menu__link">
+              <li class="toggle-menu__item">Каталог товаров</li>
+            </a>
+            <a href="#" class="toggle-menu__link">
+              <li class="toggle-menu__item">Вязание на заказ</li>
+            </a>
+            <a href="#" class="toggle-menu__link">
+              <li class="toggle-menu__item">Поиск по сайту</li>
+            </a>
+            <a href="#" class="toggle-menu__link">
+              <li class="toggle-menu__item">Корзина: пока пуста</li>
+            </a>
+          </ul>
+        </div>
+
         </div>
       </header>
       <main>
@@ -39,14 +59,14 @@
           </div>
           <h2 class="title title--top">Милые штуки ручной <br> работы для дома</h2>
           <div class="goods">
-            <button class="goods__interior">Предметы <br> интерьера</button>
-            <button class="goods__toys">Предметы <br> интерьера</button>
+            <a href="#" class="goods__interior">Предметы <br> интерьера</a>
+            <a href="#" class="goods__toys">Детские <br> игрушки</a>
           </div>
         </div>
           <div class="good-of-the-week">
             <div class="good-of-the-week__content">
 
-              <h2 class="title title--good-0f-the-week">Вязаные корзинки</h2>
+              <h2 class="title title--good-of-the-week">Вязаные корзинки</h2>
 
               <h3 class="good-of-the-week__title">ТОВАР НЕДЕЛИ</h3>
 
@@ -71,7 +91,7 @@
                 <div class="good-of-the-week__price-text">Цена:&nbsp;</div>
                 <div class="good-of-the-week__price-text"> 990руб.</div>
               </div>
-              <button type="button" class="good-of-the-week__order">ЗАКАЗАТЬ</button>
+              <button type="button" class="btn good-of-the-week__order">ЗАКАЗАТЬ</button>
             </div>
           </div>
           <div class="about-us">
@@ -101,9 +121,9 @@
               </div>
               <div class="review__btn-arrow">
                 <button class="review__btn-arrow--left"> <img src="img/icon-left-arrow.svg" alt=""> </button>
-                <button class="reciew__btn-arrow--right"> <img src="img/icon-right-arrow.svg" alt=""> </button>
+                <button class="review__btn-arrow--right"> <img src="img/icon-right-arrow.svg" alt=""> </button>
               </div>
-              <button class="review__btn-write">НАПИСАТЬ</button>
+              <button class="btn review__btn-write">НАПИСАТЬ</button>
             </div>
           </div>
       </main>
@@ -112,12 +132,12 @@
           <div class="contacts__details">
             <p class="contacts__title">Контакты</p>
             <div class="contacts__info">
-              <div class="contacts__elem">
-                <p class="contacts__option">E-mail:</p>
-                <p class="contacts__value">info@mimimishkashop.ru</p>
+              <div class="contacts__elem contacts__elem--email ">
+                <p class="contacts__option">e-mail:</p>
+                <a href="#" class="contacts__value contacts__value--email">info@mimimishkashop.ru</a>
                </div>
               <div class="contacts__elem">
-                <p class="contacts__option">Адрес:</p>
+                <p class="contacts__option">адрес:</p>
                 <p class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д 19/8, офис 101</p>
               </div>
             </div>
@@ -127,7 +147,7 @@
         </div>
 
         <div class="page-footer__write-to-us-b">
-          <button class="page-footer__write-to-us">НАПИШИТЕ НАМ</button>
+          <button class="btn page-footer__write-to-us">НАПИШИТЕ НАМ</button>
         </div>
         <div class="page-footer__grey-bg">
           <div class="social-links">
@@ -143,5 +163,10 @@
         </div>
       </footer>
     </div>
+    <script>
+    $('.hamburger').click (function(){
+    $(".hamburger, .toggle-menu").toggleClass('open');
+    });
+</script>
   </body>
 </html>

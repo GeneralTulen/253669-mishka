@@ -3,6 +3,11 @@
     border-bottom: 1px solid black;
     position: relative;
     padding-bottom: 40px;
+
+    @include tablet {
+      padding-bottom: 90px;
+    }
+
     @include desktop {
       padding-bottom: 70px;
     }
@@ -15,29 +20,36 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 500px;
+    height: 600px;
   }
 
   @include desktop {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 635px;
     justify-content: space-between;
   }
 }
 
 .good-of-the-week__title {
+  font-family: opensansbold, opensansbold-two;
   font-weight: bold;
   font-size: 17px;
   line-height: 33px;
   color: $light-green;
-  padding-top: 10px;
   margin: 0;
+
+  @include tablet {
+    padding: 30px 0 0 0;
+    text-align: center;
+    width: 120px;
+    line-height: 20px;
+  }
 
   @include desktop {
     position: absolute;
     top: 72px;
+    left: 100px;
     width: 70px;
     line-height: 16px;
     text-align: center;
@@ -45,13 +57,22 @@
 }
 
 .good-of-the-week__text {
+  padding: 1px 0 0 0;
+  font-size: 15px;
+  line-height: 24px;
+
   @include tablet {
-    width: 50%;
+    font-size: 17px;
+    line-height: 30px;
+    padding: 30px 0 0 0;
+    width: 44%;
   }
 
   @include desktop {
-    width: 30%;
-    padding: 0 175px;
+    font-size: 17px;
+    line-height: 30px;
+    width: 28%;
+    padding: 30px 175px 35px;
   }
 }
 
@@ -60,8 +81,8 @@
   position: absolute;
   width: 335px;
   height: 400px;
-  right: 28px;
-  top: 85px;
+  right: 45px;
+  top: 130px;
   }
 
   @include desktop {
@@ -81,9 +102,11 @@
 
 .good-of-the-week__details {
   height: 120px;
+  padding: 0 0 30px 0;
+
   @include tablet {
     width: 45%;
-    padding-right: 200px;
+    padding: 7px 205px 0 0;
   }
 
   @include desktop {
@@ -100,7 +123,7 @@
 }
 
 .good-of-the-week__option {
-  width: 90px;
+  width: 98px;
 }
 
 .good-of-the-week__value {
@@ -111,35 +134,49 @@
   display: flex;
   text-align: center;
   justify-content: center;
-  padding: 35px 0;
+  padding: 20px 0 25px 0;
 
   @include tablet {
-    width: 51%;
+    width: 100%;
+    padding: 60px 0px 35px 0;
+    margin: 0 370px 0 0;
   }
   @include desktop {
     width: 30%;
-    padding: 0 175px;
+    padding: 100px 175px 40px;
   }
 }
 
 .good-of-the-week__price-text {
-  font-weight: bold;
+  font-family: opensansbold, opensansbold-two;
   font-size: 17px;
   line-height: 24px;
   color: $grey-text;
+
+  @include tablet {
+    font-size: 20px;
+    padding: 50px 25px 0 0;
+    width: 15%;
+  }
+
+  @include desktop {
+    font-size: 20px;
+    padding: 10px 25px 0 0;
+    width: 15%;
+  }
 }
 
 .good-of-the-week__order {
-  font-weight: bold;
+  font-family: opensansbold, opensansbold-two;
   font-size: 17px;
   line-height: 16px;
   color: $grey-text;
   width: 100%;
-  padding: 18px 0;
+  padding: 16px 0;
 
   @include tablet {
     height: 50px;
-    width: 50%;
+    width: 300px;
   }
 
   @include desktop {
