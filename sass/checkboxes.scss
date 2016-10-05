@@ -1,0 +1,24 @@
+.checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 350px;
+
+  @include tablet {
+    height: 200px;
+  }
+
+  @include desktop {
+    height: 100px;
+  }
+}
+
+.checkboxes__elem {
+  width: 100%;
+  @include tablet {
+    width: 50%;
+  }
+  @include desktop {
+    width: 30%;
+  }
+}

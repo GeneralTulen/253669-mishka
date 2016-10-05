@@ -1,0 +1,30 @@
+.toggle-menu {
+  display: none;
+  position: absolute;
+  right: -30px;
+  padding: 0;
+  width: 320px;
+  top: 20px;
+}
+
+.toggle-menu__link {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.toggle-menu__item {
+  font-family: opensansbold;
+  font-size: 17px;
+  background-color: #fff;
+  border-bottom: 1px solid $border-color;
+  display: flex;
+  padding: 25px 0 25px 70px;
+  &:active {
+    background-color: #fff;
+  }
+}
+
+.toggle-menu.open {
+  display: block;
+}

@@ -1,17 +1,94 @@
-.form {
+
+.form__block-content {
   @include content
+    padding: 20px 0;
+
+  @include tablet {
+    display: flex;
+    padding: 70px 0;
+  }
+    @include desktop {
+    display: flex;
+    padding: 70px 0;
+    margin-left: 100px;
+    width: 75%;
+  }
+}
+
+.form__block-content--phone, .form__block-content--additonal {
+  @include tablet {
+    padding-bottom: 45px;
+  }
+  @include desktop {
+    padding-bottom: 45px;
+  }
+}
+
+ .form__block-content--email, .form__block-content--footer {
+  @include tablet {
+    padding-top: 45px;
+  }
+  @include desktop {
+    padding-top: 45px;
+  }
+}
+
+.form__block--grey-bg {
+  @include tablet {
+    background-color: $bg-light-grey;
+  }
+
+  @include desktop {
+    background-color: $bg-light-grey;
+  }
+}
+
+.form__radio-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  align-content: space-between;
+  @include tablet {
+    width: 40%;
+  }
 }
 
 .form__label-radio {
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
+  width: 95%;
 }
 
 .form__lable-checkbox {
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
+}
+
+.form__personal-info {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: space-between;
+}
+
+.form__footer {
+  @include tablet {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include desktop {
+    display: flex;
+    width: 80%;
+    margin-left: 160px;
+    justify-content: space-between;
+    align-items: center;
+    // border: 1px solid red;
+  }
 }
 
 .form__lable-text {
@@ -24,9 +101,23 @@
   font-size: 14px;
   line-height: 5.24px;
   color: $grey-text;
+  @include tablet {
+    order: 2;
+  }
+  @include desktop {
+    order: 2;
+  }
 }
 
-.input {
-  font-size: 17px;
-  line-height: 18px;
+.form__submit {
+  padding: 10px 0;
+  width: 100%;
+  @include tablet {
+    width: 240px;
+    height: 50px;
+  }
+  @include desktop {
+    width: 240px;
+    height: 50px;
+  }
 }

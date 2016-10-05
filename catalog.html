@@ -6,72 +6,93 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <title>Catalog</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="container">
     <header class="page-header">
-    <nav class="page-header__nav">
-          <ul class="page-header__nav-list">
-            <li class="page-header__nav-elem"><a href="#" class="page-header__nav-link">Каталог товаров</a></li>
-            <li class="page-header__nav-elem"><a href="#" class="page-header__nav-link">Вязание на заказ</a></li>
-          </ul>
-          <img class="page-header__logo" src="img/logo.png" alt="#">
-          <a href="#" class="page-header__search">Search</a>
-          <a href="#" class="page-header__basket">Корзина: пока пуста</a>
-          <button class="page-header__hamburger-menu"></button>
-        </nav>
+     <div class="page-header__content">
+      <span class="page-header__logo-tablet"></span>
+      <nav class="page-header__nav">
+       <ul class="page-header__nav-list">
+         <li class="page-header__nav-elem"><a href="#" class="page-header__nav-link">Каталог товаров</a></li>
+         <li class="page-header__nav-elem"><a href="#" class="page-header__nav-link">Вязание на заказ</a></li>
+       </ul>
+         <span class="page-header__logo-mobile"></span>
+         <span class="page-header__logo-desktop"></span>
+         <a href="#" class="page-header__search">Search</a>
+         <a href="#" class="page-header__basket">Корзина: пока пуста</a>
+       <button class="page-header__hamburger-menu"></button>
+      </nav>
+      </div>
     </header>
     <main>
       <div class="catalog">
-      <div class="catalog__title-block">
-        <div class="under-header-list">
-            <a href="#" class="under-header-list__elem under-header-list__elem--bold">Новые поступления</a>
-            <a href="#" class="under-header-list__elem under-header-list__elem--bold">Распродажа</a>
+        <div class="catalog__title-block">
+          <div class="under-header-list">
+            <div class="under-header-list__left-side">
+              <a href="#" class="under-header-list__elem under-header-list__elem--bold">Новые поступления</a>
+              <a href="#" class="under-header-list__elem under-header-list__elem--bold">Распродажа</a>
+            </div>
             <a href="#" class="under-header-list__elem under-header-list__elem--regular">Бесплатная доставка по России</a>
           </div>
         <h2 class="title title--grey-bg">Каталог товаров</h2>
       </div>
-        <div class="catalog__elem">
-          <img src="img/photo-1-mobile@1x.jpg" class="catalog__elem-pic" alt="">
-          <p class="catalog__elem-title">Зайчик попрыгайчик</p>
-          <p class="catalog__elem-description">Рост 30 см, вес 200 г</p>
-          <hr>
-          <div class="price-b">
-            <div class="price">1 200 руб.</div>
-            <button class="icon icon-type--basket">Bascket</button>
-          </div>
-        </div>
+        <div class="catalog__elements">
           <div class="catalog__elem">
             <img src="img/photo-1-mobile@1x.jpg" class="catalog__elem-pic" alt="">
-            <p class="catalog__elem-title">Зайчик попрыгайчик</p>
-            <p class="catalog__elem-description">Рост 30 см, вес 200 г</p>
-            <hr>
-            <div class="price-b">
-              <div class="price">1 200 руб.</div>
-              <button class="icon icon-type--basket">Bascket</button>
+              <div class="catalog__description">
+                <div class="catalog__parameters-b">
+                  <p class="catalog__elem-title">Зайчик попрыгайчик</p>
+                  <p class="catalog__parameters">Рост 30 см, вес 200 г</p>
+                </div>
+                <div class="price-b">
+                    <div class="price">1 200 руб.</div>
+                    <button class="icon icon-type--basket">Bascket</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog__elem">
+              <img src="img/photo-1-mobile@1x.jpg" class="catalog__elem-pic" alt="">
+              <div class="catalog__description">
+                <div class="catalog__parameters-b">
+                  <p class="catalog__elem-title">Зайчик попрыгайчик</p>
+                  <p class="catalog__parameters">Рост 30 см, вес 200 г</p>
+                </div>
+                <div class="price-b">
+                    <div class="price">1 200 руб.</div>
+                    <button class="icon icon-type--basket">Bascket</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog__elem">
+              <img src="img/photo-1-mobile@1x.jpg" class="catalog__elem-pic" alt="">
+              <div class="catalog__description">
+                <div class="catalog__parameters-b">
+                  <p class="catalog__elem-title">Зайчик попрыгайчик</p>
+                  <p class="catalog__parameters">Рост 30 см, вес 200 г</p>
+                </div>
+                <div class="price-b">
+                    <div class="price">1 200 руб.</div>
+                    <button class="icon icon-type--basket">Bascket</button>
+                </div>
+              </div>
             </div>
         </div>
-          <div class="catalog__elem">
-            <img src="img/photo-1-mobile@1x.jpg" class="catalog__elem-pic" alt="">
-            <p class="catalog__elem-title">Зайчик попрыгайчик</p>
-            <p class="catalog__elem-description">Рост 30 см, вес 200 г</p>
-            <hr>
-            <div class="price-b">
-              <div class="price">1 200 руб.</div>
-              <button class="icon icon-type--basket">Bascket</button>
-           </div>
-        </div>
+
         <div class="work-process">
-          <div class="work-process__elem">
+          <img src="img/video-mobile@1x.jpg" class="work-process__video" alt="">
+        <div class="work-process__description">
+          <div class="work-process__title-b">
             <span class="icon icon-type--video"></span>
             <p class="work-process__title">Процесс производства</p>
           </div>
-          <img src="img/video-mobile@1x.jpg" class="work-process__video" alt="">
           <p class="work-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <button type="button" class="make-order">СДЕЛАТЬ ЗАКАЗ</button>
+          <button type="button" class="work-process__make-order">СДЕЛАТЬ ЗАКАЗ</button>
+        </div>
         </div>
       </div>
     </main>

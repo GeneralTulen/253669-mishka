@@ -1,9 +1,14 @@
 
 @mixin tablet {
-  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width}) {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width} - 1px) {
     @content;
   }
 }
+// @mixin tablet {
+//   @media (min-width: #{$tablet-width}) {
+//     @content;
+//   }
+// }
 
 @mixin desktop {
   @media (min-width: #{$desktop-width}) {
@@ -12,14 +17,15 @@
 }
 
 @mixin content {
-  width: 290px;
+  width: 260px;
   margin: 0 auto;
 
   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width}) {
-    width: $tablet-width - 55px;
+    width: $tablet-width - 100px;
   }
 
   @media (min-width: #{$desktop-width}) {
-    width: $desktop-width - 45px;
+    width: $desktop-width - 100px;
     }
 }
+

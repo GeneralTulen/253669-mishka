@@ -2,13 +2,30 @@
 .knit {
   background-color: $bg-light-grey;
   height: 180px;
-  float: left;
   width: 100%;
+
+  @include tablet {
+    height: 215px;
+  }
+
+  @include desktop {
+    height: 235px;
+  }
 }
 
 .knit__text {
+  @include content
   font-size: 13px;
   line-height: 24px;
   color: $grey-text;
-  @include content
+  padding: 30px 0;
+  @include tablet {
+    padding: 70px 0 0 0;
+  }
+  @include desktop {
+    padding: 70px 0 0 0;
+    width: 50%;
+    margin-left: 260px;
+    // border: 1px solid red;
+  }
 }

@@ -1,10 +1,45 @@
 .about-us {
   @include content
+
+  @include tablet {
+    padding: 50px 0 0 0;
+    height: 500px;
+  }
+
+  @include desktop {
+    padding: 80px 175px;
+    width: 700px;
+  }
+}
+
+.about-us__description {
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    height: 400px;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+    height: 420px;
+  }
 }
 
 .about-us__text {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
+  font-family: opensansbold, opensansbold-two;
+  font-size: 17px;
   line-height: 20px;
-  color: $grey-text;
+  font-weight: bold;
+
+  @include tablet {
+    width: 50%;
+    font-size: 20px;
+  }
+
+  @include desktop {
+    width: 50%;
+  }
 }

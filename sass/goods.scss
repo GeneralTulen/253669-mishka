@@ -1,20 +1,17 @@
 .goods {
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 24px;
-  color: white;
-  position: relative;
-  top: 230px;
-  margin: 0px;
+  display: flex;
+  padding-top: 120px;
+  flex-wrap: wrap;
 
   @include tablet {
     @include content
-    top: 570px;
+    padding-top: 375px;
+    width: 100%;
   }
 
   @include desktop {
     @include content
-    top: 570px;
+    padding: 360px 0px;
   }
 }
 
@@ -24,24 +21,28 @@
 
 .goods__toys {
   background-color: $dark-green;
+  margin-bottom: 40px;
 }
 
 .goods__interior, .goods__toys {
-  height: 100px;
+  font-family: opensansbold, opensansbold-two;
+  font-size: 19px;
+  line-height: 24px;
+  padding-left: 29px;
+  color: white;
+  height: 104px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 
     @include tablet {
-      float: left;
-      width: 50%
+      height: 115px;
+      width: 45.5%;
   }
 
     @include desktop {
-      width: 50%;
-      float: left;
+      height: 130px;
+      width: 47%;
   }
-}
-
-.goods__text {
-  float: left;
-  padding-left: 20px;
 }

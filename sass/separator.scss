@@ -1,7 +1,36 @@
 
-.separator__title {
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include tablet {
+    height: 20px;
+    width: 60px;
+    margin: 0 100px 0 0;
+  }
+    @include desktop {
+    height: 20px;
+    width: 60px;
+    margin: 0 100px 0 0;
+  }
+}
 
+.separator__title {
   font-size: 17px;
   line-height: 16px;
   color: $light-green;
 }
+
+.separator__line {
+  background-color: $light-green;
+  width: 200px;
+  height: 1px;
+
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+   display: none;
+  }
+}
+
