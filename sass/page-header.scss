@@ -3,6 +3,8 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid $border-color;
+  position: relative;
+  font-family: opensansbold;
 
   @include tablet {
     height: 90px;
@@ -10,6 +12,7 @@
   }
 
   @include desktop {
+    font-size: 17px;
     height: 90px;
     display: flex;
     justify-content: space-between;
@@ -20,9 +23,10 @@
   @include content
   display: flex;
   align-items: center;
+  height: inherit;
 }
 
-.page-header__nav-link, .page-header__search, .page-header__basket {
+.page-header__nav-link, .page-header__search, .page-header__cart-b {
   text-decoration: none;
 }
 
@@ -35,9 +39,10 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  height: inherit;
 }
 
-.page-header__search, .page-header__basket {
+.page-header__search, .page-header__cart-b {
   display: none;
 
   @include tablet {
@@ -49,12 +54,6 @@
   }
 }
 
-.page-header__basket {
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 24px;
-  color: black;
-}
 
 .page-header__nav-list{
   display: none;
@@ -71,6 +70,7 @@
     margin-top: 145px;
     margin-left: -115px;
     font-size: 15px;
+    z-index: 3;
   }
 
   @include desktop {
@@ -81,8 +81,10 @@
 }
 
 .page-header__logo-mobile {
-  background: url(../img/logo.png) no-repeat;
+  background: url(../img/logo-mobile.svg) no-repeat;
   padding: 20px 50px;
+  position: absolute;
+  right: 105px;
 
   @include tablet {
     display: none;
@@ -95,29 +97,46 @@
 
 .page-header__logo-tablet {
   @include tablet {
-    background: url(../img/logo-tablet.png) no-repeat;
+    background: url(../img/logo-tablet.svg) no-repeat;
     padding: 25px 60px;
   }
 }
 
 .page-header__logo-desktop {
   @include desktop {
-    background: url(../img/logo-desktop.png) no-repeat;
-    padding: 40px 80px;
+    background: url(../img/logo-desktop.svg) no-repeat;
+    padding: 35px 80px;
   }
 }
 
-.page-header__hamburger-menu {
-  width: 50px;
-  height: 50px;
-  border-radius: 40px;
-  float: right;
+.page-header__search, .page-header__cart-b{
+  height: inherit;
+  align-items: center;
+}
 
-  @include tablet {
-    display: none;
-  }
+.page-header__search {
+    height: inherit;
+    padding: 0px 30px;
+    // margin: 0 20px 0 0;
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
 
   @include desktop {
-    display: none;
+    margin: 0;
+    padding: 0px 35px;
   }
+}
+
+
+.page-header__cart {
+  color: black;
+  font-size: 17px;
+
+  @include desktop {
+    padding: 0 0 0 30px;
+  }
+}
+
+.page-header__cart-b {
+  // margin: 0 0 0 -45px;
 }

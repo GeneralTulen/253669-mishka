@@ -1,5 +1,6 @@
 .about-us {
   @include content
+  padding: 0 0 35px 0;
 
   @include tablet {
     padding: 50px 0 0 0;
@@ -33,6 +34,7 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
+  margin: 10px 0 25px 0;
 
   @include tablet {
     width: 50%;

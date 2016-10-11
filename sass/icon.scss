@@ -1,0 +1,64 @@
+.icon-search {
+  fill: #d3d2d2;
+}
+
+.icon-cart {
+  fill: #d3d2d2;
+  margin: 0 30px;
+}
+
+.icon-search, .icon-cart {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-interior {
+  fill: #3bb09d;
+}
+
+.icon-toy {
+  fill: #35a999;
+}
+
+.icon-interior, .icon-toy {
+  width: 60px;
+  height: 60px;
+}
+
+.icon-feature-1, .icon-feature-2, .icon-feature-3, .icon-feature-4, .icon-feature-5, .icon-feature-6 {
+  @include content
+  width: 40px;
+  height: 40px;
+  // padding: 0 0 0 10px;
+  fill: #63d1bb;
+  display: flex-start;
+  justify-content: left;
+}
+
+.icon-feature-2 {
+  width: 45px;
+}
+
+.icon-feature-3 {
+  height: 30px;
+  padding: 10px 0 5px 0;
+}
+
+.icon-feature-4 {
+  height: 35px;
+  padding: 10px 0 0 0;
+}
+
+.icon-feature-5 {
+  width: 55px;
+}
+
+.icon-feature-6 {
+  height: 30px;
+  padding: 10px 0 0 0;
+}
+
+.icon-left-arrow, .icon-right-arrow {
+  width: 50px;
+  height: 27px;
+}
