@@ -1,0 +1,30 @@
+.zigzag-fill {
+  background: url(../img/bg-zigzag-fill.svg) no-repeat center;
+  background-size: 104%;
+  position: absolute;
+}
+.zigzag-fill--goods {
+  @include tablet {
+    top: 725px;
+    width: $tablet-width;
+    height: 40px;
+  }
+  @include desktop {
+    top: 725px;
+    width: $desktop-width;
+    height: 40px;
+  }
+}
+
+.zigzag-fill--catalog {
+  @include tablet {
+    width: $tablet-width;
+    top: 310px;
+    height: 40px;
+  }
+  @include desktop {
+    width: $desktop-width;
+    top: 330px;
+    height: 40px;
+  }
+}

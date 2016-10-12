@@ -10,6 +10,13 @@
   }
 }
 
+.icon-cart--catalog {
+  margin: 0;
+  @include desktop {
+    margin: 0 10px 0 0;
+  }
+}
+
 .icon-search, .icon-cart {
   width: 20px;
   height: 20px;
@@ -146,5 +153,28 @@
     left: 115px;
     top: 135px;
 
+  }
+}
+
+.icon-video {
+  fill: $light-green;
+  @include desktop {
+    width: 35px;
+  }
+}
+
+.icon-play {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  left: 65px;
+  cursor: pointer;
+  @include tablet {
+    top: 195px;
+    left: 270px;
+  }
+  @include desktop {
+    top: 190px;
+    left: 290px;
   }
 }

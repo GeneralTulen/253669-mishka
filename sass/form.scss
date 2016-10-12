@@ -1,7 +1,11 @@
 
+.form__block {
+  // margin: 20px 0 0 0;
+}
+
 .form__block-content {
   @include content
-    padding: 20px 0;
+    padding: 5px 0 0 0;
 
   @include tablet {
     display: flex;
@@ -43,23 +47,6 @@
   }
 }
 
-.form__radio-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100px;
-  align-content: space-between;
-  @include tablet {
-    width: 40%;
-  }
-}
-
-.form__label-radio {
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 18px;
-  width: 95%;
-}
-
 .form__lable-checkbox {
   font-weight: bold;
   font-size: 17px;
@@ -71,6 +58,7 @@
   flex-direction: column;
   height: 250px;
   justify-content: space-between;
+  padding: 15px 0 0 0;
 }
 
 .form__footer {

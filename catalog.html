@@ -7,24 +7,68 @@
   <meta name="format-detection" content="telephone=no">
   <title>Catalog</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+  </script>
 </head>
 <body>
   <div class="container">
     <header class="page-header">
-     <div class="page-header__content">
-      <span class="page-header__logo-tablet"></span>
-      <nav class="page-header__nav">
-       <ul class="page-header__nav-list">
-         <li class="page-header__nav-elem"><a href="#" class="page-header__nav-link">Каталог товаров</a></li>
-         <li class="page-header__nav-elem"><a href="#" class="page-header__nav-link">Вязание на заказ</a></li>
-       </ul>
-         <span class="page-header__logo-mobile"></span>
-         <span class="page-header__logo-desktop"></span>
-         <a href="#" class="page-header__search">Search</a>
-         <a href="#" class="page-header__basket">Корзина: пока пуста</a>
-       <button class="page-header__hamburger-menu"></button>
-      </nav>
+      <div class="page-header__content">
+       <a href="#" class="logo">
+         <svg width="100" height="35" role="img" class="logo__mobile">
+            <use xlink:href="img/svgcombine-file.svg#logo-mobile"></use>
+          </svg>
+       </a>
+
+       <a href="#" class="logo">
+          <svg width="110" height="45" role="img" class="logo__tablet">
+            <use xlink:href="img/svgcombine-file.svg#logo-tablet"></use>
+          </svg>
+       </a>
+
+        <nav class="page-header__nav">
+         <ul class="page-header__nav-list">
+           <li class="page-header__nav-elem"><a href="#" class="page-header__nav-link">Каталог товаров</a></li>
+           <li class="page-header__nav-elem"><a href="#" class="page-header__nav-link">Вязание на заказ</a></li>
+         </ul>
+            <a href="#" class="logo">
+              <svg width="150" height="80" role="img" class="logo__desktop">
+              <use xlink:href="img/svgcombine-file.svg#logo-desktop"></use>
+            </svg>
+            </a>
+
+           <a href="#" class="page-header__search">
+              <svg role="img" class="icon-search">
+                <use xlink:href="img/svgcombine-file.svg#icon-search"></use>
+              </svg>
+           </a>
+           <a href="#" class="page-header__cart-b">
+              <svg role="img" class="icon-cart">
+                <use xlink:href="img/svgcombine-file.svg#icon-cart"></use>
+              </svg>
+           <p class="page-header__cart">Корзина: пока пуста</p>
+           </a>
+        </nav>
+
+        <div class="nav-menu-mobile">
+          <span class="icon-menu-open"></span>
+
+          <ul class="toggle-menu">
+            <a href="#" class="toggle-menu__link">
+              <li class="toggle-menu__item">Каталог товаров</li>
+            </a>
+            <a href="#" class="toggle-menu__link">
+              <li class="toggle-menu__item">Вязание на заказ</li>
+            </a>
+            <a href="#" class="toggle-menu__link">
+              <li class="toggle-menu__item">Поиск по сайту</li>
+            </a>
+            <a href="#" class="toggle-menu__link">
+              <li class="toggle-menu__item">Корзина: пока пуста</li>
+            </a>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -39,77 +83,145 @@
           </div>
         <h2 class="title title--grey-bg">Каталог товаров</h2>
       </div>
+      <div class="zigzag-fill zigzag-fill--catalog"></div>
         <div class="catalog__elements">
           <div class="catalog__elem">
-            <img src="img/photo-1-mobile@1x.jpg" class="catalog__elem-pic" alt="">
+            <picture class="catalog__elem-pic">
+              <source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg, img/photo-1-tablet@2x.jpg 2x">
+              <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="">
+            </picture>
               <div class="catalog__description">
                 <div class="catalog__parameters-b">
-                  <p class="catalog__elem-title">Зайчик попрыгайчик</p>
+                  <p class="catalog__elem-title">Зайчик-попрыгайчик</p>
                   <p class="catalog__parameters">Рост 30 см, вес 200 г</p>
                 </div>
-                <div class="price-b">
-                    <div class="price">1 200 руб.</div>
-                    <button class="icon icon-type--basket">Bascket</button>
+                <div class="catalog__price-b">
+                    <div class="catalog__price">1 200 руб.</div>
+                    <a href="#" class="catalog-cart">
+                      <svg role="img" class="icon-cart icon-cart--catalog">
+                        <use xlink:href="img/svgcombine-file.svg#icon-cart"></use>
+                      </svg>
+                    </a>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__elem">
+              <picture class="catalog__elem-pic">
+                <source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg, img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg, img/photo-2-tablet@2x.jpg 2x">
+                <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="">
+              </picture>
+              <div class="catalog__description">
+                <div class="catalog__parameters-b">
+                  <p class="catalog__elem-title">Корзинка для белья</p>
+                  <p class="catalog__parameters">Диаметр 15 см, высота 10 см</p>
+                </div>
+                <div class="catalog__price-b">
+                    <div class="catalog__price">690 руб.</div>
+                    <a href="#" class="catalog-cart">
+                      <svg role="img" class="icon-cart icon-cart--catalog">
+                        <use xlink:href="img/svgcombine-file.svg#icon-cart"></use>
+                      </svg>
+                    </a>
                 </div>
               </div>
             </div>
 
             <div class="catalog__elem">
-              <img src="img/photo-1-mobile@1x.jpg" class="catalog__elem-pic" alt="">
+              <picture class="catalog__elem-pic">
+                <source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg, img/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg, img/photo-3-tablet@2x.jpg 2x">
+                <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="">
+              </picture>
               <div class="catalog__description">
                 <div class="catalog__parameters-b">
-                  <p class="catalog__elem-title">Зайчик попрыгайчик</p>
-                  <p class="catalog__parameters">Рост 30 см, вес 200 г</p>
+                  <p class="catalog__elem-title">Большая корзинка <br> для игрушек</p>
+                  <p class="catalog__parameters">Диаметр 30 см, высота 30 см</p>
                 </div>
-                <div class="price-b">
-                    <div class="price">1 200 руб.</div>
-                    <button class="icon icon-type--basket">Bascket</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="catalog__elem">
-              <img src="img/photo-1-mobile@1x.jpg" class="catalog__elem-pic" alt="">
-              <div class="catalog__description">
-                <div class="catalog__parameters-b">
-                  <p class="catalog__elem-title">Зайчик попрыгайчик</p>
-                  <p class="catalog__parameters">Рост 30 см, вес 200 г</p>
-                </div>
-                <div class="price-b">
-                    <div class="price">1 200 руб.</div>
-                    <button class="icon icon-type--basket">Bascket</button>
+                <div class="catalog__price-b">
+                    <div class="catalog__price">1 500 руб.</div>
+                    <a href="#" class="catalog-cart">
+                      <svg role="img" class="icon-cart icon-cart--catalog">
+                        <use xlink:href="img/svgcombine-file.svg#icon-cart"></use>
+                      </svg>
+                    </a>
                 </div>
               </div>
             </div>
         </div>
+
         <div class="work-process">
-          <img src="img/video-mobile@1x.jpg" class="work-process__video" alt="">
-        <div class="work-process__description">
+          <picture class="work-process__video">
+            <svg width="130" height="80" role="img" class="icon-play">
+              <use xlink:href="img/svgcombine-file.svg#icon-play"></use>
+            </svg>
+            <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg 2x">
+            <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" class="work-process__video" alt="">
+          </picture>
+
           <div class="work-process__title-b">
-            <span class="icon icon-type--video"></span>
+            <svg width="70" height="30" role="img" class="icon-video">
+              <use xlink:href="img/svgcombine-file.svg#icon-video"></use>
+            </svg>
             <p class="work-process__title">Процесс производства</p>
           </div>
-          <p class="work-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <button type="button" class="work-process__make-order">СДЕЛАТЬ ЗАКАЗ</button>
-        </div>
+
+          <div class="work-process__description">
+            <p class="work-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <button type="button" class="btn work-process__make-order">СДЕЛАТЬ ЗАКАЗ</button>
+          </div>
         </div>
       </div>
     </main>
     <footer class="page-footer">
         <div class="page-footer__grey-bg">
-          <div class="social-links">
-            <a href="#" class="icon icon-type__inst"></a>
-            <a href="#" class="icon icon-type__facebook"></a>
-            <a href="#" class="icon icon-type__twitter"><a/>
-          </div>
-          <div class="page-footer__bottom">
-            <p class="page-footer__developped">Разработано</p>
-            <span class="icon icon-type--html-academy"></span>
+          <div class="page-footer__grey-bg-content">
+            <a href="#" class="logo">
+              <svg width="100" height="45" role="img" class="logo__footer">
+                  <use xlink:href="img/svgcombine-file.svg#logo-footer">
+                  </use>
+              </svg>
+            </a>
+            <div class="social-links">
+              <a href="#" class="social-links__item social-links__item--insta">
+                <svg width="25" height="25" role="img" class="icon-insta">
+                  <use xlink:href="img/svgcombine-file.svg#icon-insta">
+                  </use>
+                </svg>
+              </a>
+              <a href="#" class="social-links__item">
+                <svg width="25" height="28" role="img" class="icon-fb">
+                  <use xlink:href="img/svgcombine-file.svg#icon-fb">
+                  </use>
+                </svg>
+              </a>
+              <a href="#" class="social-links__item social-links__item--twitter">
+                <svg width="25" height="25" role="img" class="icon-twitter">
+                  <use xlink:href="img/svgcombine-file.svg#icon-twitter">
+                  </use>
+                </svg>
+              </a>
+            </div>
+            <div class="page-footer__bottom">
+              <p class="page-footer__dev">Разработано</p>
+              <a href="#" class="icon-dev-link">
+                <svg width="40" height="45" role="img" class="icon-dev">
+                    <use xlink:href="img/svgcombine-file.svg#icon-dev">
+                    </use>
+                </svg>
+              </a>
+            </div>
           </div>
           </div>
         </div>
       </footer>
   </div>
-
+    <script>
+    $('.icon-menu-open').click (function(){
+    $(".icon-menu-open, .toggle-menu").toggleClass('open');
+    });
+    </script>
 </body>
 </html>

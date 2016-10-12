@@ -6,25 +6,69 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <title>Form mobile</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+   </script>
 </head>
 <body>
   <div class="container">
     <header class="page-header">
      <div class="page-header__content">
-      <span class="page-header__logo-tablet"></span>
-      <nav class="page-header__nav">
-       <ul class="page-header__nav-list">
-         <li class="page-header__nav-elem"><a href="#" class="page-header__nav-link">Каталог товаров</a></li>
-         <li class="page-header__nav-elem"><a href="#" class="page-header__nav-link">Вязание на заказ</a></li>
-       </ul>
-         <span class="page-header__logo-mobile"></span>
-         <span class="page-header__logo-desktop"></span>
-         <a href="#" class="page-header__search">Search</a>
-         <a href="#" class="page-header__basket">Корзина: пока пуста</a>
-       <button class="page-header__hamburger-menu"></button>
-      </nav>
-      </div>
+       <a href="#" class="logo">
+         <svg width="100" height="35" role="img" class="logo__mobile">
+            <use xlink:href="img/svgcombine-file.svg#logo-mobile"></use>
+          </svg>
+       </a>
+
+       <a href="#" class="logo">
+        <svg width="110" height="45" role="img" class="logo__tablet">
+          <use xlink:href="img/svgcombine-file.svg#logo-tablet"></use>
+        </svg>
+       </a>
+
+        <nav class="page-header__nav">
+         <ul class="page-header__nav-list">
+           <li class="page-header__nav-elem"><a href="#" class="page-header__nav-link">Каталог товаров</a></li>
+           <li class="page-header__nav-elem"><a href="#" class="page-header__nav-link">Вязание на заказ</a></li>
+         </ul>
+            <a href="#" class="logo">
+              <svg width="150" height="80" role="img" class="logo__desktop">
+              <use xlink:href="img/svgcombine-file.svg#logo-desktop"></use>
+            </svg>
+            </a>
+
+           <a href="#" class="page-header__search">
+              <svg role="img" class="icon-search">
+                <use xlink:href="img/svgcombine-file.svg#icon-search"></use>
+              </svg>
+           </a>
+           <a href="#" class="page-header__cart-b">
+              <svg role="img" class="icon-cart">
+                <use xlink:href="img/svgcombine-file.svg#icon-cart"></use>
+              </svg>
+           <p class="page-header__cart">Корзина: пока пуста</p>
+           </a>
+        </nav>
+
+        <div class="nav-menu-mobile">
+          <span class="icon-menu-open"></span>
+
+          <ul class="toggle-menu">
+            <a href="#" class="toggle-menu__link">
+              <li class="toggle-menu__item">Каталог товаров</li>
+            </a>
+            <a href="#" class="toggle-menu__link">
+              <li class="toggle-menu__item">Вязание на заказ</li>
+            </a>
+            <a href="#" class="toggle-menu__link">
+              <li class="toggle-menu__item">Поиск по сайту</li>
+            </a>
+            <a href="#" class="toggle-menu__link">
+              <li class="toggle-menu__item">Корзина: пока пуста</li>
+            </a>
+          </ul>
+        </div>
+       </div>
     </header>
     <main>
       <div class="knit">
@@ -35,22 +79,26 @@
           </div>
           <a href="#" class="under-header-list__elem under-header-list__elem--regular">Бесплатная доставка по России</a>
         </div>
-        <h2 class="title title--grey-bg">Вязание на заказ</h2>
+        <h2 class="title title--form">Вязание на заказ</h2>
       </div>
       <form action="index.php" class="form">
         <p class="knit__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
-        <div class="form__block ">
+        <div class="form__block">
           <div class="form__block-content">
             <div class="separator">
               <h3 class="separator__title">ТИП</h3>
               <span class="separator__line"></span>
             </div>
-            <div class="form__radio-buttons">
-              <input type="radio" class="input input--type-radio" checked>
-              <label class="form__label-radio" >Аксессуар для интерьера</label>
-              <input type="radio" class="input input--type-radio">
-              <label class="form__label-radio" >Детская игрушка</label>
+            <div class="radio">
+              <div class="radio__elem">
+                <input type="radio" class="input input--type-radio" checked>
+                <label class="radio__label" >Аксессуар для интерьера</label>
+              </div>
+              <div class="radio__elem">
+                <input type="radio" class="input input--radio">
+                <label class="radio__label" >Детская игрушка</label>
+              </div>
             </div>
           </div>
         </div>
@@ -58,32 +106,32 @@
         <div class="form__block form__block--grey-bg">
           <div class="form__block-content">
             <div class="separator">
-                <h3 class="separator__title">ЦВЕТ</h3>
-                <span class="separator__line"></span>
-              </div>
+              <h3 class="separator__title">ЦВЕТ</h3>
+              <span class="separator__line"></span>
+            </div>
             <div class="checkboxes">
               <div class="checkboxes__elem">
-                <input class="input input--type-checkbox" type="checkbox" checked>
+                <input class="input input--checkbox" type="checkbox" checked>
                 <lable class="form__lable-checkbox">Белый</lable>
               </div>
               <div class="checkboxes__elem">
-                <input class="input input--type-checkbox" type="checkbox" checked>
+                <input class="input input--checkbox" type="checkbox" checked>
                 <lable class="form__lable-checkbox">Серый</lable>
               </div>
               <div class="checkboxes__elem">
-                <input class="input input--type-checkbox" type="checkbox">
+                <input class="input input--checkbox" type="checkbox">
                 <lable class="form__lable-checkbox">"Тиффани"</lable>
               </div>
               <div class="checkboxes__elem">
-                <input class="input input--type-checkbox" type="checkbox">
+                <input class="input input--checkbox" type="checkbox">
                 <lable class="form__lable-checkbox">Чёрный</lable>
               </div>
               <div class="checkboxes__elem">
-                <input class="input input--type-checkbox" type="checkbox">
+                <input class="input input--checkbox" type="checkbox">
                 <lable class="form__lable-checkbox">Розовый</lable>
               </div>
               <div class="checkboxes__elem">
-                <input class="input input--type-checkbox" type="checkbox">
+                <input class="input input--checkbox" type="checkbox">
                 <lable class="form__lable-checkbox">Оранжевый</lable>
               </div>
             </div>
@@ -98,11 +146,11 @@
             </div>
             <div class="form__personal-info">
               <lable class="form__lable-text">Имя:</lable>
-              <input class="input input-type--text" type="text" placeholder="Введите ваше имя">
+              <input class="input input--text" type="text" placeholder="Введите ваше имя">
               <lable class="form__lable-text">Фамилия:</lable>
-              <input class="input input-type--text" type="text" placeholder="Укажите фамилию">
+              <input class="input input--text" type="text" placeholder="Укажите фамилию">
               <lable class="form__lable-text">Отчество:</lable>
-              <input class="input input-type--text" type="text" placeholder="Отчество, если желаете">
+              <input class="input input--text" type="text" placeholder="Отчество, если желаете">
             </div>
           </div>
         </div>
@@ -149,19 +197,52 @@
         </form>
       <footer class="page-footer">
         <div class="page-footer__grey-bg">
-          <div class="social-links">
-            <a href="#" class="icon icon-type__inst"></a>
-            <a href="#" class="icon icon-type__facebook"></a>
-            <a href="#" class="icon icon-type__twitter"><a/>
-          </div>
-          <div class="page-footer__bottom">
-            <p class="page-footer__developped">Разработано</p>
-            <span class="icon icon-type--html-academy"></span>
+          <div class="page-footer__grey-bg-content">
+            <a href="#" class="logo">
+              <svg width="100" height="45" role="img" class="logo__footer">
+                  <use xlink:href="img/svgcombine-file.svg#logo-footer">
+                  </use>
+              </svg>
+            </a>
+            <div class="social-links">
+              <a href="#" class="social-links__item social-links__item--insta">
+                <svg width="25" height="25" role="img" class="icon-insta">
+                  <use xlink:href="img/svgcombine-file.svg#icon-insta">
+                  </use>
+                </svg>
+              </a>
+              <a href="#" class="social-links__item">
+                <svg width="25" height="28" role="img" class="icon-fb">
+                  <use xlink:href="img/svgcombine-file.svg#icon-fb">
+                  </use>
+                </svg>
+              </a>
+              <a href="#" class="social-links__item social-links__item--twitter">
+                <svg width="25" height="25" role="img" class="icon-twitter">
+                  <use xlink:href="img/svgcombine-file.svg#icon-twitter">
+                  </use>
+                </svg>
+              </a>
+            </div>
+            <div class="page-footer__bottom">
+              <p class="page-footer__dev">Разработано</p>
+              <a href="#" class="icon-dev-link">
+                <svg width="40" height="45" role="img" class="icon-dev">
+                    <use xlink:href="img/svgcombine-file.svg#icon-dev">
+                    </use>
+                </svg>
+              </a>
+            </div>
           </div>
           </div>
         </div>
       </footer>
     </main>
   </div>
+  <script>
+    $('.icon-menu-open').click (function(){
+    $(".icon-menu-open, .toggle-menu").toggleClass('open');
+    });
+  </script>
 </body>
 </html>

@@ -64,11 +64,27 @@
 }
 
 .title--grey-bg {
+  font-size: 30px;
   text-align: center;
   position: relative;
   top: 70px;
   @include tablet {
-    top: 25px;
+    top: 45px;
+
+  }
+  @include desktop {
+    top: 40px;
+  }
+}
+
+.title--form {
+  font-size: 27px;
+  text-align: center;
+  position: relative;
+  top: 70px;
+  @include tablet {
+    top: 45px;
+
   }
   @include desktop {
     top: 40px;

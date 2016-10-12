@@ -1,0 +1,20 @@
+.radio {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  align-content: space-between;
+  @include tablet {
+    width: 40%;
+  }
+}
+
+.radio__elem {
+  display: flex;
+}
+
+.radio__label {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  width: 95%;
+}
