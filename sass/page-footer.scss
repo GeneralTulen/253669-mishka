@@ -7,9 +7,22 @@
 
 .page-footer__grey-bg {
   background-color: $bg-light-grey;
+}
 
+.page-footer__grey-bg-content {
   @include tablet {
-
+    @include content
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+  }
+  @include desktop {
+    @include content
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
   }
 }
 
@@ -18,13 +31,13 @@
   text-align: center;
 
   @include tablet {
-    padding: 10px 0 0 0;
+    padding: 13px 0 0 0;
   }
 
   @include desktop {
     width: 228px;
     position: absolute;
-    top: 400px;
+    top: 418px;
     text-align: left;
     padding: 0 0 0 225px;
   }
@@ -38,9 +51,10 @@
   color: $grey-text;
   border: 2px solid $grey-text;
   background-color: white;
-  margin: 40px auto;
+  margin: 30px 0 40px;
 
   @include tablet {
+    margin: 31px 0 55px;
     padding: 13px 0;
     width: 230px;
   }
@@ -57,6 +71,7 @@
   height: 80px;
   display: flex;
   align-items: center;
+  justify-content: center;
 
   @include tablet {
     height: 145px;
@@ -67,11 +82,17 @@
   }
 }
 
-.page-footer__developped {
-  @include content
-  text-align: center;
-  font-weight: bold;
+
+.page-footer__dev {
+  font-family: opensansbold;
   font-size: 19px;
   line-height: 18px;
+  width: 140px;
+  @include tablet {
+    width: 120px;
+  }
+  @include desktop {
+    width: 120px;
+  }
 }
 

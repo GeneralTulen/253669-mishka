@@ -7,38 +7,52 @@
     <meta name="format-detection" content="telephone=no">
     <title>Main mobile</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+    </script>
   </head>
   <body>
     <div class="container">
       <header class="page-header">
        <div class="page-header__content">
-        <span class="page-header__logo-mobile"></span>
-        <span class="page-header__logo-tablet"></span>
+       <a href="#" class="logo">
+         <svg width="100" height="35" role="img" class="logo__mobile">
+            <use xlink:href="img/svgcombine-file.svg#logo-mobile"></use>
+          </svg>
+       </a>
+
+       <a href="#" class="logo">
+         <svg width="110" height="45" role="img" class="logo__tablet">
+            <use xlink:href="img/svgcombine-file.svg#logo-tablet"></use>
+          </svg>
+       </a>
+
         <nav class="page-header__nav">
          <ul class="page-header__nav-list">
            <li class="page-header__nav-elem"><a href="#" class="page-header__nav-link">Каталог товаров</a></li>
            <li class="page-header__nav-elem"><a href="#" class="page-header__nav-link">Вязание на заказ</a></li>
          </ul>
-           <span class="page-header__logo-desktop"></span>
+            <a href="#" class="logo">
+              <svg width="150" height="80" role="img" class="logo__desktop">
+              <use xlink:href="img/svgcombine-file.svg#logo-desktop"></use>
+            </svg>
+            </a>
 
            <a href="#" class="page-header__search">
               <svg role="img" class="icon-search">
-                <use xlink:href="img/svgcombine.svg#icon-search"></use>
+                <use xlink:href="img/svgcombine-file.svg#icon-search"></use>
               </svg>
            </a>
            <a href="#" class="page-header__cart-b">
               <svg role="img" class="icon-cart">
-                <use xlink:href="img/svgcombine.svg#icon-cart"></use>
+                <use xlink:href="img/svgcombine-file.svg#icon-cart"></use>
               </svg>
-           <p class="page-header__cart">Корзина: пока пуста</p></a>
+           <p class="page-header__cart">Корзина: пока пуста</p>
+           </a>
         </nav>
 
         <div class="nav-menu-mobile">
-          <div class="hamburger">
-            <div class="hamburger__left"></div>
-            <div class="hamburger__right"></div>
-          </div>
+          <span class="icon-menu-open"></span>
+
           <ul class="toggle-menu">
             <a href="#" class="toggle-menu__link">
               <li class="toggle-menu__item">Каталог товаров</li>
@@ -72,7 +86,7 @@
               <div class="goods__content">
                 <p class="goods__text">Предметы <br> интерьера</p>
                 <svg role="img" class="icon-interior">
-                  <use xlink:href="img/svgcombine.svg#icon-interior"></use>
+                  <use xlink:href="img/svgcombine-file.svg#icon-interior"></use>
                 </svg>
               </div>
             </a>
@@ -80,7 +94,7 @@
               <div class="goods__content">
                 <p class="goods__text">Детские <br> игрушки</p>
                 <svg role="img" class="icon-toy">
-                  <use xlink:href="img/svgcombine.svg#icon-toy"></use>
+                  <use xlink:href="img/svgcombine-file.svg#icon-toy"></use>
                 </svg>
               </div>
             </a>
@@ -111,47 +125,56 @@
               </div>
             </div>
                 <img src="img/triple-set-mobile@1x.jpg" class="good-of-the-week__img" alt="">
-              <div class="good-of-the-week__price">
-                <div class="good-of-the-week__price-text">Цена:&nbsp;</div>
-                <div class="good-of-the-week__price-text"> 990руб.</div>
-              </div>
+              <p class="good-of-the-week__price"> Цена: 990&nbsp;руб.</p>
               <button type="button" class="btn good-of-the-week__order">ЗАКАЗАТЬ</button>
             </div>
-              <span class="zigzag-line"></span>
+            <span class="zigzag-line zigzag-line--goods"></span>
           </div>
           <div class="about-us">
             <h2 class="title title--about-us">Коротко о нас:</h2>
             <div class="about-us__description">
 
-                <svg role="img" class="icon-feature-1">
-                  <use xlink:href="img/svgcombine.svg#icon-feature-1"></use>
-                </svg>
-              <p class="about-us__text">Экологически <br> чистые материалы</p>
+                <div class="about-us__item">
+                  <svg role="img" class="icon-feature-1">
+                    <use xlink:href="img/svgcombine-file.svg#icon-feature-1"></use>
+                  </svg>
+                  <p class="about-us__text">Экологически <br> чистые материалы</p>
+                </div>
 
-                <svg role="img" class="icon-feature-2">
-                  <use xlink:href="img/svgcombine.svg#icon-feature-2"></use>
-                </svg>
-              <p class="about-us__text">Скандинавский стиль <br> по российской цене</p>
+                <div class="about-us__item">
+                  <svg role="img" class="icon-feature-2">
+                    <use xlink:href="img/svgcombine-file.svg#icon-feature-2"></use>
+                  </svg>
+                  <p class="about-us__text">Cкандинавский стиль <br> по российской цене</p>
+                </div>
 
-                <svg role="img" class="icon-feature-3">
-                  <use xlink:href="img/svgcombine.svg#icon-feature-3"></use>
-                </svg>
-              <p class="about-us__text">Увеличивает лайки <br> на фотографиях</p>
+                <div class="about-us__item">
+                  <svg role="img" class="icon-feature-3">
+                    <use xlink:href="img/svgcombine-file.svg#icon-feature-3"></use>
+                  </svg>
+                  <p class="about-us__text">Увеличивает лайки <br> на фотографиях</p>
+                </div>
 
-                <svg role="img" class="icon-feature-4">
-                  <use xlink:href="img/svgcombine.svg#icon-feature-4"></use>
-                </svg>
-              <p class="about-us__text">Связано вручную с  <br> любовью и умилением</p>
+                <div class="about-us__item">
+                  <svg role="img" class="icon-feature-4">
+                    <use xlink:href="img/svgcombine-file.svg#icon-feature-4"></use>
+                  </svg>
+                  <p class="about-us__text">Связано вручную с  <br> любовью и умилением</p>
+                </div>
 
-                <svg role="img" class="icon-feature-5">
-                  <use xlink:href="img/svgcombine.svg#icon-feature-5"></use>
-                </svg>
-              <p class="about-us__text">Поддержка отечественного производителя</p>
+                <div class="about-us__item">
+                  <svg role="img" class="icon-feature-5">
+                    <use xlink:href="img/svgcombine-file.svg#icon-feature-5"></use>
+                  </svg>
+                  <p class="about-us__text">Поддержка отечественного производителя</p>
+                </div>
 
-                <svg role="img" class="icon-feature-6">
-                  <use xlink:href="img/svgcombine.svg#icon-feature-6"></use>
-                </svg>
-              <p class="about-us__text">Поставляется в <br> подарочной упаковке</p>
+                <div class="about-us__item">
+                  <svg role="img" class="icon-feature-6">
+                    <use xlink:href="img/svgcombine-file.svg#icon-feature-6"></use>
+                  </svg>
+                  <p class="about-us__text">Поставляется в <br> подарочной упаковке</p>
+                </div>
             </div>
           </div>
           <div class="review">
@@ -165,23 +188,25 @@
               <div class="review__btn-arrow">
                 <button class="review__btn-arrow--left">
                   <svg role="img" class="icon-left-arrow">
-                    <use xlink:href="img/svgcombine.svg#icon-left-arrow"></use>
+                    <use xlink:href="img/svgcombine-file.svg#icon-left-arrow"></use>
                   </svg>
                 </button>
                 <button class="review__btn-arrow--right">
                   <svg role="img" class="icon-right-arrow">
-                    <use xlink:href="img/svgcombine.svg#icon-right-arrow"></use>
+                    <use xlink:href="img/svgcombine-file.svg#icon-right-arrow"></use>
                   </svg>
                 </button>
               </div>
               <button class="btn review__btn-write">НАПИСАТЬ</button>
             </div>
+          <span class="zigzag-line zigzag-line--review"></span>
           </div>
       </main>
       <footer class="page-footer">
         <div class="contacts">
           <div class="contacts__details">
             <p class="contacts__title">Контакты</p>
+            <span class="icon-flag"></span>
             <div class="contacts__info">
               <div class="contacts__elem contacts__elem--email ">
                 <p class="contacts__option">e-mail:</p>
@@ -189,7 +214,7 @@
                </div>
               <div class="contacts__elem">
                 <p class="contacts__option">адрес:</p>
-                <p class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д 19/8, офис 101</p>
+                <p class="contacts__value">г. Санкт-Петербург, <br> ул. Большая Конюшенная, <br> д.19/8, офис 101</p>
               </div>
             </div>
         </div>
@@ -201,23 +226,53 @@
           <button class="btn page-footer__write-to-us">НАПИШИТЕ НАМ</button>
         </div>
         <div class="page-footer__grey-bg">
-          <div class="social-links">
-            <a href="#" class="icon icon__inst"></a>
-            <a href="#" class="icon icon__facebook"></a>
-            <a href="#" class="icon icon__twitter"><a/>
-          </div>
-          <div class="page-footer__bottom">
-            <p class="page-footer__developped">Разработано</p>
-            <span class="icon icon--html-academy"></span>
+          <div class="page-footer__grey-bg-content">
+            <a href="#" class="logo">
+              <svg width="100" height="45" role="img" class="logo__footer">
+                  <use xlink:href="img/svgcombine-file.svg#logo-footer">
+                  </use>
+              </svg>
+            </a>
+            <div class="social-links">
+              <a href="#" class="social-links__item social-links__item--insta">
+                <svg width="25" height="25" role="img" class="icon-insta">
+                  <use xlink:href="img/svgcombine-file.svg#icon-insta">
+                  </use>
+                </svg>
+              </a>
+              <a href="#" class="social-links__item">
+                <svg width="25" height="28" role="img" class="icon-fb">
+                  <use xlink:href="img/svgcombine-file.svg#icon-fb">
+                  </use>
+                </svg>
+              </a>
+              <a href="#" class="social-links__item social-links__item--twitter">
+                <svg width="25" height="25" role="img" class="icon-twitter">
+                  <use xlink:href="img/svgcombine-file.svg#icon-twitter">
+                  </use>
+                </svg>
+              </a>
+            </div>
+            <div class="page-footer__bottom">
+              <p class="page-footer__dev">Разработано</p>
+              <a href="#" class="icon-dev-link">
+                <svg width="40" height="45" role="img" class="icon-dev">
+                    <use xlink:href="img/svgcombine-file.svg#icon-dev">
+                    </use>
+                </svg>
+              </a>
+            </div>
           </div>
           </div>
         </div>
       </footer>
     </div>
+
     <script>
-    $('.hamburger').click (function(){
-    $(".hamburger, .toggle-menu").toggleClass('open');
+    $('.icon-menu-open').click (function(){
+    $(".icon-menu-open, .toggle-menu").toggleClass('open');
     });
-</script>
+    </script>
+
   </body>
 </html>

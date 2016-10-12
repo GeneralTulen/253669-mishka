@@ -5,6 +5,9 @@
 .icon-cart {
   fill: #d3d2d2;
   margin: 0 30px;
+  @include desktop {
+    margin: 0 30px 0 0;
+  }
 }
 
 .icon-search, .icon-cart {
@@ -21,44 +24,127 @@
 }
 
 .icon-interior, .icon-toy {
+  @include tablet {
+    margin: 0 30px 0 0;
+  }
+  @include desktop {
+    margin: 0 30px 0 0;
+  }
+}
+
+.icon-interior, .icon-toy {
   width: 60px;
   height: 60px;
 }
 
 .icon-feature-1, .icon-feature-2, .icon-feature-3, .icon-feature-4, .icon-feature-5, .icon-feature-6 {
-  @include content
   width: 40px;
   height: 40px;
-  // padding: 0 0 0 10px;
   fill: #63d1bb;
   display: flex-start;
   justify-content: left;
 }
+.icon-feature-1 {
+
+}
 
 .icon-feature-2 {
-  width: 45px;
+  @include tablet {
+    width: 45px;
+  }
+  @include desktop {
+    width: 45px;
+  }
 }
 
 .icon-feature-3 {
   height: 30px;
   padding: 10px 0 5px 0;
+  @include tablet {
+    padding: 10px 0 0 5px;
+  }
+  @include desktop {
+    padding: 10px 0 0 5px;
+  }
 }
 
 .icon-feature-4 {
   height: 35px;
   padding: 10px 0 0 0;
+  @include tablet {
+    padding: 0;
+  }
+  @include desktop {
+    padding: 5px 0 0 0;
+  }
 }
 
 .icon-feature-5 {
   width: 55px;
+  @include tablet {
+    width: 45px;
+  }
 }
 
 .icon-feature-6 {
   height: 30px;
   padding: 10px 0 0 0;
+  @include tablet {
+    padding: 5px 0 5px 0;
+  }
 }
 
 .icon-left-arrow, .icon-right-arrow {
   width: 50px;
   height: 27px;
+}
+
+.icon-insta, .icon-fb, .icon-twitter {
+  fill: #000;
+}
+
+.icon-dev {
+  fill: $light-green;
+  padding-left: 15px;
+  @include tablet {
+    padding: 0;
+    margin: 0 -6px 0 30px;
+  }
+  @include desktop {
+    padding: 0;
+    margin: 0 -6px 0 30px;
+  }
+}
+
+.icon-menu-open {
+  margin-top: -10px;
+  padding: 10px;
+  background: url(../img/icon-menu-open.svg) no-repeat center;
+  cursor: pointer;
+  &.open {
+    background: url(../img/icon-menu-close.svg) no-repeat center;
+  }
+}
+
+.icon-flag {
+  display: none;
+
+  @include tablet {
+    display: flex;
+    background: url(../img/icon-flag.svg) no-repeat center;
+    padding: 45px 25px;
+    position: absolute;
+    right: 3px;
+    top: 55px;
+  }
+
+  @include desktop {
+    display: flex;
+    background: url(../img/icon-flag.svg) no-repeat center;
+    padding: 45px 25px;
+    position: absolute;
+    left: 115px;
+    top: 135px;
+
+  }
 }

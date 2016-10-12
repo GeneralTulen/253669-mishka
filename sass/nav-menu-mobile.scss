@@ -1,5 +1,7 @@
 .nav-menu-mobile {
   @include content
+  display: flex;
+  justify-content: flex-end;
   position: relative;
 
   @include tablet {
