@@ -1,14 +1,116 @@
-
-
 .input {
   font-size: 17px;
   line-height: 18px;
   border: 0;
+  border-bottom: 2px solid black;
+  width: 100%;
+  color: $placeholder-color;
+  &:focus {
+    color: black;
+  }
+  @include tablet {
+    font-size: 19px;
+  }
+  @include desktop {
+    font-size: 19px;
+  }
+
 }
+.input--pers-info {
+  width: 100%;
+}
+
 .input--text {
-  border-bottom: 1px solid black;
-  padding: 10px 0;
+  padding: 0 0 19px 0;
+  @include tablet {
+    padding: 0 0 19px 20px;
+    font-size: 19px;
+  }
+  @include desktop {
+    padding: 0 0 16px 10px;
+    font-size: 19px;
+    width: 100%;
+    margin: 0 50px 0 0;
+  }
 }
-.input--radio {
-  // transform:scale(1.8);
+
+.input__icon-box {
+  display: flex;
+  border-bottom: 2px solid black;
+  align-content: center;
+  height: 40px;
+  @include tablet {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 0 0 20px;
+    margin: 0 0 30px 20px;
+    height: 37px;
+  }
+  @include desktop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0 50px 0 0;
+    height: 35px;
+  }
+}
+
+.input__icon {
+  fill: $placeholder-color;
+  stroke: $placeholder-color;
+  @include tablet {
+    padding: 0 20px 0 0;
+  }
+  @include desktop {
+    padding: 0 10px 0 0;
+    transform: scale(1.25, 1.25);
+  }
+}
+
+.input__icon--phone {
+  @include desktop {
+    transform: scale(1.05, 1.05)
+
+  }
+}
+
+.input--phone, .input--email  {
+  border: 0;
+  @include tablet {
+    background-color: $bg-light-grey;
+  }
+  @include desktop {
+    background-color: $bg-light-grey;
+  }
+}
+
+.input--textarea {
+  border: 2px solid black;
+  resize: none;
+  font-family: opensans;
+  padding: 13px;
+  width: 90%;
+  color: $placeholder-color;
+  &:hover {
+    border: 2px solid $light-green;
+  }
+  &:focus {
+    color: black;
+  }
+  @include tablet {
+    width: 70%;
+  }
+  @include desktop {
+    margin: 0 50px 0 0;
+  }
+}
+
+.input--text, .input__icon-box {
+    &:hover {
+    border-bottom: 2px solid $light-green;
+  }
 }

@@ -5,11 +5,11 @@
   width: 100%;
 
   @include tablet {
-    height: 215px;
+    height: 235px;
   }
 
   @include desktop {
-    height: 235px;
+    height: 255px;
   }
 }
 
@@ -20,12 +20,14 @@
   color: $grey-text;
   padding: 20px 0 0 0;
   @include tablet {
-    padding: 70px 0 0 0;
+    padding: 60px 0 0 0;
+    font-size: 17px;
+    line-height: 30px;
   }
   @include desktop {
-    padding: 70px 0 0 0;
-    width: 50%;
-    margin-left: 260px;
-    // border: 1px solid red;
+    padding: 120px 0 0 0;
+    font-size: 17px;
+    line-height: 30px;
+    width: 61%;
   }
 }

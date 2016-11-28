@@ -80,119 +80,176 @@
           <a href="#" class="under-header-list__elem under-header-list__elem--regular">Бесплатная доставка по России</a>
         </div>
         <h2 class="title title--form">Вязание на заказ</h2>
+        <div class="zigzag-fill zigzag-fill--form"></div>
       </div>
       <form action="index.php" class="form">
         <p class="knit__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
-        <div class="form__block">
-          <div class="form__block-content">
-            <div class="separator">
+        <div class="form__block form__block--radio">
+          <div class="form__block-content form__block-content--radio">
+            <div class="separator separator--type">
               <h3 class="separator__title">ТИП</h3>
               <span class="separator__line"></span>
             </div>
             <div class="radio">
               <div class="radio__elem">
-                <input type="radio" class="input input--type-radio" checked>
-                <label class="radio__label" >Аксессуар для интерьера</label>
+                <label class="radio__label">
+                  <input type="radio" class="radio__input" name="radio__input" >
+                  <svg width="70" height="50"  class="radio__svg">
+                    <circle  class="radio__stroke" stroke="#000" r="18" cy="29" cx="21" stroke-width="1.5" fill="#fff"/>
+                    <circle class="radio__circle" r="8" cy="29" cx="21" fill="#fff"/>
+                  </svg>
+                  <p class="radio__label-text radio__label-text--inter">Аксессуар для интерьера</p>
+                </label>
               </div>
+
               <div class="radio__elem">
-                <input type="radio" class="input input--radio">
-                <label class="radio__label" >Детская игрушка</label>
+                <label class="radio__label">
+                  <input type="radio" class="radio__input" name="radio__input" checked>
+                  <svg width="70" height="50" class="radio__svg">
+                    <circle class="radio__stroke" stroke="#000" r="18" cy="30" cx="21" stroke-width="1.5" fill="#fff"/>
+                    <circle class="radio__circle" r="8" cy="30" cx="21" fill="#fff"/>
+                  </svg>
+                  <p class="radio__label-text radio__label-text--toy">Детская игрушка</p>
+                </label>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="form__block form__block--grey-bg">
-          <div class="form__block-content">
-            <div class="separator">
+        <div class="form__block form__block--grey-bg form__block--color">
+          <div class="form__block-content form__block-content--color">
+            <div class="separator separator--color">
               <h3 class="separator__title">ЦВЕТ</h3>
               <span class="separator__line"></span>
             </div>
-            <div class="checkboxes">
-              <div class="checkboxes__elem">
-                <input class="input input--checkbox" type="checkbox" checked>
-                <lable class="form__lable-checkbox">Белый</lable>
+            <div class="checkbox">
+              <div class="checkbox__elem">
+                <label class="checkbox__label">
+                  <input class="checkbox__input" type="checkbox" checked>
+                  <svg width="47" height="47" role="img" class="checkbox__icon">
+                    <use x="7" y="6" xlink:href="img/svgcombine-file.svg#icon-tick" width="28" height="28"></use>
+                    <rect x="2" y="2" width="39" height="38" stroke="black" stroke-width="1.5" fill="none" class="checkbox__rect"/>
+                  </svg>
+                  <p class="checkbox__text"> Белый</p>
+                </label>
               </div>
-              <div class="checkboxes__elem">
-                <input class="input input--checkbox" type="checkbox" checked>
-                <lable class="form__lable-checkbox">Серый</lable>
+
+              <div class="checkbox__elem">
+                <label class="checkbox__label">
+                  <input class="checkbox__input" type="checkbox" checked>
+                  <svg width="47" height="47" role="img" class="checkbox__icon">
+                    <use x="7" y="6" xlink:href="img/svgcombine-file.svg#icon-tick" width="28" height="28"></use>
+                    <rect x="2" y="2" width="39" height="38" stroke="black" stroke-width="1.5" fill="none" class="checkbox__rect"/>
+                  </svg>
+                  <p class="checkbox__text"> Серый</p>
+                </label>
               </div>
-              <div class="checkboxes__elem">
-                <input class="input input--checkbox" type="checkbox">
-                <lable class="form__lable-checkbox">"Тиффани"</lable>
+              <div class="checkbox__elem">
+                <label class="checkbox__label">
+                  <input class="checkbox__input" type="checkbox">
+                  <svg width="47" height="47" role="img" class="checkbox__icon">
+                    <use x="7" y="6" xlink:href="img/svgcombine-file.svg#icon-tick" width="28" height="28"></use>
+                    <rect x="2" y="2" width="39" height="38" stroke="black" stroke-width="1.5" fill="none" class="checkbox__rect"/>
+                  </svg>
+                  <p class="checkbox__text">"Тиффани"</p>
+                </label>
               </div>
-              <div class="checkboxes__elem">
-                <input class="input input--checkbox" type="checkbox">
-                <lable class="form__lable-checkbox">Чёрный</lable>
+              <div class="checkbox__elem">
+                <label class="checkbox__label">
+                  <input class="checkbox__input" type="checkbox">
+                  <svg width="47" height="47" role="img" class="checkbox__icon">
+                    <use x="7" y="6" xlink:href="img/svgcombine-file.svg#icon-tick" width="28" height="28"></use>
+                    <rect x="2" y="2" width="39" height="38" stroke="black" stroke-width="1.5" fill="none" class="checkbox__rect"/>
+                  </svg>
+                  <p class="checkbox__text"> Черный</p>
+                </label>
               </div>
-              <div class="checkboxes__elem">
-                <input class="input input--checkbox" type="checkbox">
-                <lable class="form__lable-checkbox">Розовый</lable>
+              <div class="checkbox__elem">
+                <label class="checkbox__label">
+                  <input class="checkbox__input" type="checkbox">
+                  <svg width="47" height="47" role="img" class="checkbox__icon">
+                    <use x="7" y="6" xlink:href="img/svgcombine-file.svg#icon-tick" width="28" height="28"></use>
+                    <rect x="2" y="2" width="39" height="38" stroke="black" stroke-width="1.5" fill="none" class="checkbox__rect"/>
+                  </svg>
+                  <p class="checkbox__text"> Розовый</p>
+                </label>
               </div>
-              <div class="checkboxes__elem">
-                <input class="input input--checkbox" type="checkbox">
-                <lable class="form__lable-checkbox">Оранжевый</lable>
+              <div class="checkbox__elem">
+                <label class="checkbox__label">
+                  <input class="checkbox__input" type="checkbox">
+                  <svg width="47" height="47" role="img" class="checkbox__icon">
+                    <use x="7" y="6" xlink:href="img/svgcombine-file.svg#icon-tick" width="28" height="28"></use>
+                    <rect x="2" y="2" width="39" height="38" stroke="black" stroke-width="1.5" fill="none" class="checkbox__rect"/>
+                  </svg>
+                  <p class="checkbox__text"> Оранжевый</p>
+                </label>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="form__block ">
+        <div class="form__block form__block--FIO">
           <div class="form__block-content">
-            <div class="separator">
-              <h3 class="separator__title form-input">ФИО</h3>
+            <div class="separator separator--FIO">
+              <h3 class="separator__title separator__title--FIO">ФИО</h3>
               <span class="separator__line"></span>
             </div>
             <div class="form__personal-info">
-              <lable class="form__lable-text">Имя:</lable>
-              <input class="input input--text" type="text" placeholder="Введите ваше имя">
-              <lable class="form__lable-text">Фамилия:</lable>
-              <input class="input input--text" type="text" placeholder="Укажите фамилию">
-              <lable class="form__lable-text">Отчество:</lable>
-              <input class="input input--text" type="text" placeholder="Отчество, если желаете">
+              <div class="form__personal-info-elem">
+                <label class="form__lable-text">Имя:</label>
+                <input class="input input--text" type="text" placeholder="Введите ваше имя">
+              </div>
+              <div class="form__personal-info-elem">
+                <label class="form__lable-text">Фамилия:</label>
+                <input class="input input--text" type="text" placeholder="Укажите фамилию">
+              </div>
+              <div class="form__personal-info-elem">
+                <label class="form__lable-text">Отчество:</label>
+                <input class="input input--text" type="text" placeholder="Отчество, если желаете">
+              </div>
             </div>
           </div>
         </div>
-        <div class="form__block form__block--grey-bg">
+        <div class="form__block form__block--grey-bg form__block--phone-email">
           <div class="form__block-content form__block-content--phone">
             <div class="separator">
-              <h3 class="separator__title">ТЕЛ</h3>
+              <h3 class="separator__title separator__title--phone">ТЕЛ</h3>
               <span class="separator__line"></span>
             </div>
-            <div class="input-icon-box">
-              <input class="input" type="tel" placeholder="+7 XXX XX XX">
-              <span class="icon icon-type--phone"></span>
+            <div class="input__icon-box input__icon-box--phone">
+              <input class="input input--phone" type="tel" placeholder="+7 XXX XX XX">
+              <svg width="25" height="25" class="input__icon input__icon--phone">
+                <use x="0" y="0" xlink:href="img/svgcombine-file.svg#icon-phone" ></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form__block-content form__block-content--email">
+            <div class="separator">
+              <h3 class="separator__title separator__title--email">E-MAIL</h3>
+              <span class="separator__line separator__line--email"></span>
+            </div>
+            <div class="input__icon-box input__icon-box--email">
+                <input class="input input--email" type="tel" placeholder="Ваш Email">
+                <svg width="27" height="27" class="input__icon">
+                  <use x="0" y="0" xlink:href="img/svgcombine-file.svg#icon-mail" ></use>
+                </svg>
             </div>
           </div>
         </div>
 
-        <div class="form__block form__block--grey-bg">
-          <div class="form__block-content form__block-content--email">
-            <div class="separator">
-              <h3 class="separator__title">E-MAIL</h3>
-              <span class="separator__line"></span>
+        <div class="form__block ">
+          <div class="form__block-content form__block-content--additonal">
+            <div class="separator separator--dop">
+                <h3 class="separator__title">ДОП</h3>
+                <span class="separator__line"></span>
             </div>
-            <div class="input-icon-box">
-                <input class="input" type="tel" placeholder="Ваш Email">
-                <span class="icon icon-type--email"></span>
-            </div>
+            <textarea class="input--textarea" cols="30" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
         </div>
-        <div class="form__block ">
-        <div class="form__block-content form__block-content--additonal">
-          <div class="separator">
-              <h3 class="separator__title">ДОП</h3>
-              <span class="separator__line"></span>
-            </div>
-            <input type="textarea" class="input input-type--textarea" placeholder="Опишите все ваши пожелания к заказу">
-            </div>
-          </div>
         <div class="form__block-content form__block-content--footer">
-          <div class="form__footer">
-            <lable class="form__text">Все поля обязательны для заполнения</lable>
-            <button type="submit" class="form__submit">ОТПРАВИТЬ ЗАКАЗ</button>
-          </div>
+            <label class="form__text">Все поля обязательны для заполнения</label>
+            <button type="submit" class="btn form__submit">ОТПРАВИТЬ ЗАКАЗ</button>
         </div>
         </form>
       <footer class="page-footer">
@@ -206,7 +263,7 @@
             </a>
             <div class="social-links">
               <a href="#" class="social-links__item social-links__item--insta">
-                <svg width="25" height="25" role="img" class="icon-insta">
+                <svg width="30" height="30" role="img" class="icon-insta">
                   <use xlink:href="img/svgcombine-file.svg#icon-insta">
                   </use>
                 </svg>
@@ -218,7 +275,7 @@
                 </svg>
               </a>
               <a href="#" class="social-links__item social-links__item--twitter">
-                <svg width="25" height="25" role="img" class="icon-twitter">
+                <svg width="30" height="30" role="img" class="icon-twitter">
                   <use xlink:href="img/svgcombine-file.svg#icon-twitter">
                   </use>
                 </svg>

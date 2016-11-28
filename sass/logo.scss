@@ -13,6 +13,12 @@
 
 .logo__tablet {
   display: none;
+  &:hover{
+    fill: $link-on-hover;
+  }
+  &:active {
+    fill: $link-on-active;
+  }
   @include tablet {
     display: flex;
     margin-top: 5px;
@@ -33,6 +39,12 @@
 
 .logo__desktop {
   display: none;
+  &:hover{
+    fill: $link-on-hover;
+  }
+  &:active {
+    fill: $link-on-active;
+  }
   @include desktop {
     display: flex;
     margin: 5px 0 0 45px;

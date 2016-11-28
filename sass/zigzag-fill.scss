@@ -28,3 +28,16 @@
     height: 40px;
   }
 }
+
+.zigzag-fill--form {
+  @include tablet {
+    width: $tablet-width;
+    top: 305px;
+    height: 40px;
+  }
+  @include desktop {
+    width: $desktop-width;
+    top: 335px;
+    height: 40px;
+  }
+}
