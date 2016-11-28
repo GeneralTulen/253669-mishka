@@ -1,4 +1,3 @@
-
 .social-links {
   border-bottom: 1px solid #e5e5e5;
   height: 80px;
@@ -23,10 +22,21 @@
   display: flex;
   align-items: center;
   height: 30px;
+  &:hover {
+    .social-links__item-icon {
+      fill: $light-green;
+    }
+  }
+  &:active {
+    .social-links__item-icon {
+      fill: $green-on-active;
+    }
+  }
 }
 
 .social-links__item--insta {
   margin: 0 32px 0 55px;
+  fill: #231F20;
   @include tablet {
     margin: 0;
   }
@@ -43,4 +53,8 @@
   @include desktop {
     margin: 0;
   }
+}
+
+.icon-insta, .icon-fb, .icon-twitter {
+  fill: #000;
 }

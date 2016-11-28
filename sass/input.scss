@@ -5,6 +5,8 @@
   border-bottom: 2px solid black;
   width: 100%;
   color: $placeholder-color;
+
+
   &:focus {
     color: black;
   }
@@ -39,6 +41,12 @@
   border-bottom: 2px solid black;
   align-content: center;
   height: 40px;
+  &:hover {
+    .input__icon {
+      fill: $light-green;
+      stroke: $light-green;
+    }
+  }
   @include tablet {
     display: flex;
     width: 100%;
@@ -74,12 +82,12 @@
 .input__icon--phone {
   @include desktop {
     transform: scale(1.05, 1.05)
-
   }
 }
 
 .input--phone, .input--email  {
   border: 0;
+
   @include tablet {
     background-color: $bg-light-grey;
   }
@@ -89,6 +97,7 @@
 }
 
 .input--textarea {
+  font-size: 17px;
   border: 2px solid black;
   resize: none;
   font-family: opensans;
@@ -103,9 +112,11 @@
   }
   @include tablet {
     width: 70%;
+    font-size: 19px;
   }
   @include desktop {
     margin: 0 50px 0 0;
+    font-size: 19px;
   }
 }
 

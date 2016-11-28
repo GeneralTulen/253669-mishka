@@ -27,6 +27,12 @@
 
 .logo__footer {
   display: none;
+  &:hover {
+    fill: $light-green;
+  }
+  &:active {
+    fill: $green-on-active;
+  }
   @include tablet {
     display: flex;
     margin: -10px 0 0 0;

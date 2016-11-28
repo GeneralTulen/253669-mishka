@@ -98,6 +98,14 @@
   text-decoration: none;
   border-bottom: 1px solid #62d1ba;
   width: 180px;
+  &:hover {
+    color: $light-green;
+  }
+  &:active {
+    color: $green-on-active;
+    border-bottom: 1px solid $green-on-active;
+  }
+
   @include tablet {
     width: 202px;
   }

@@ -24,6 +24,29 @@
 .catalog__elem {
   @include content
   padding: 0 0 30px 0;
+  cursor: pointer;
+    &:hover {
+      .catalog__description{
+      box-shadow: 4px 7px 10px hsla(0, 0%, 50%, 0.43);
+      }
+      .catalog__elem-title, .catalog__price {
+        color: $link-on-hover;
+      }
+      .catalog__icon-cart {
+        fill: $light-green;
+      }
+    }
+    &:active {
+      .catalog__description{
+      box-shadow: 2px 4px 5px hsla(0, 0%, 50%, 0.43);
+      }
+      .catalog__elem-title, .catalog__price {
+        color: $link-on-active;
+      }
+      .catalog__icon-cart {
+        fill: $green-on-active;
+      }
+    }
 
   @include tablet {
     display: flex;
@@ -32,14 +55,13 @@
   }
 
   @include desktop {
-    width: 314px;
+    width: 315px;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: stretch;
     border: 1px solid $bg-light-grey;
-    // border: 1px solid green;
   }
 }
 
@@ -49,8 +71,6 @@
   }
   @include desktop {
     height: 462px;
-    padding-bottom: 25px;
-    // display: flex;
   }
 }
 
@@ -80,21 +100,18 @@
     align-content: space-between;
   }
   @include desktop {
+    padding: 25px 0 0 0;
     border: 1px solid transparent;
-    // border: 1px solid black;
     display: flex;
     flex: 1;
     flex-wrap: wrap;
     align-content: space-between;
-    // border: 1px solid red;
   }
 }
 
 .catalog__parameters-b {
   margin: 0 0 0 10px;
-  // border: 1px solid red;
 }
-
 
 .catalog__parameters {
   font-size: 13px;
@@ -138,5 +155,15 @@
   }
   @include desktop {
     font-size: 17px;
+  }
+}
+
+.catalog__icon-cart {
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  fill: #d3d2d2;
+  @include desktop {
+    margin: 0 10px 0 0;
   }
 }

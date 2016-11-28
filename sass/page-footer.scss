@@ -72,6 +72,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  &:hover {
+    .page-footer__icon-dev {
+      fill: #45C1AE;
+    }
+  }
+  &:active {
+    color: $link-on-active;
+    .page-footer__icon-dev {
+      fill: $green-on-active;
+    }
+  }
 
   @include tablet {
     height: 145px;
@@ -82,17 +93,34 @@
   }
 }
 
-
 .page-footer__dev {
   font-family: opensansbold;
   font-size: 19px;
   line-height: 18px;
   width: 140px;
+  cursor: pointer;
+
   @include tablet {
     width: 120px;
   }
   @include desktop {
     width: 120px;
+  }
+}
+
+.page-footer__icon-dev {
+  fill: $light-green;
+  padding-left: 15px;
+  &:hover {
+    fill: $green-on-active;
+  }
+  @include tablet {
+    padding: 0;
+    margin: 0 -6px 0 30px;
+  }
+  @include desktop {
+    padding: 0;
+    margin: 0 -6px 0 30px;
   }
 }
 

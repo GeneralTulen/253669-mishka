@@ -107,6 +107,18 @@
   padding: 10px 0;
   border: 1px solid $border-color;
   cursor: pointer;
+  &:hover {
+    .review__icon-left-arrow, .review__icon-right-arrow {
+      fill: #666666;
+    }
+  }
+
+  &:active {
+    .review__icon-left-arrow, .review__icon-right-arrow {
+      fill: #B2B2B2;
+    }
+  }
+
   @include tablet {
     width: 48%;
     border: 1px solid transparent;
@@ -117,8 +129,9 @@
   }
 }
 
-.review__btn-arrow--left {
-  border-right: 1px solid transparent;
+.review__icon-left-arrow, .review__icon-right-arrow {
+  width: 50px;
+  height: 27px;
 }
 
 .review__btn-write {
