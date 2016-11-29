@@ -1,8 +1,10 @@
 
 .separator {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
+
   @include tablet {
     height: 20px;
     width: 60px;
@@ -11,7 +13,8 @@
     @include desktop {
     height: 20px;
     width: 60px;
-    margin: 0 100px 0 0;
+    margin: 0 50px 0 0;
+    justify-content: flex-end;
   }
 }
 
@@ -21,9 +24,62 @@
   color: $light-green;
 }
 
+.separator--type {
+  padding: 7px 0 0 0;
+  @include tablet {
+    padding: 20px 0 0 0;
+  }
+  @include desktop {
+    padding: 20px 0 0 0;
+    margin: 0 68px 0 0;
+  }
+}
+
+.separator--color {
+  padding: 12px 0 0 0;
+  @include tablet {
+    padding: 22px 0 0 0;
+  }
+  @include desktop {
+    padding: 15px 0 0 0;
+    margin: 0 68px 0 0;
+  }
+}
+
+.separator--FIO {
+  @include desktop {
+    margin: 0 53px 0 0;
+  }
+}
+
+.separator--dop {
+  @include tablet {
+    padding: 15px 0 0 0;
+  }
+  @include desktop {
+    padding: 15px 0 0 0;
+  }
+}
+
+.separator__title--FIO {
+  @include tablet {
+    padding: 22px 0 0 0;
+  }
+}
+
+.separator__title--phone, .separator__title--email {
+  @include tablet {
+    width: 200px;
+  }
+  @include desktop {
+    width: 100px;
+    text-align: right;
+  }
+}
+
 .separator__line {
   background-color: $light-green;
-  width: 200px;
+  width: 75%;
   height: 1px;
 
   @include tablet {
@@ -34,3 +90,10 @@
   }
 }
 
+.separator__line--email {
+  width: 180px;
+}
+
+.separator--dop {
+  margin: 0 0 15px 0;
+}

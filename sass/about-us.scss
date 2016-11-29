@@ -1,45 +1,61 @@
 .about-us {
   @include content
+  padding: 0 0 35px 0;
 
   @include tablet {
     padding: 50px 0 0 0;
-    height: 500px;
   }
 
   @include desktop {
-    padding: 80px 175px;
+    padding: 80px 175px 0;
     width: 700px;
   }
 }
 
 .about-us__description {
-
   @include tablet {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     align-items: stretch;
-    height: 400px;
+    height: 490px;
   }
 
   @include desktop {
+    padding: 15px 0 0 0;
     display: flex;
     flex-wrap: wrap;
-    height: 420px;
+    flex-direction: column;
+    align-items: stretch;
+    height: 500px;
+  }
+}
+
+.about-us__item {
+  @include tablet {
+    width: 50%;
+    margin: 0 0 25px 0;
+  }
+  @include desktop {
+    width: 50%;
+    margin: 0 0 25px 0;
   }
 }
 
 .about-us__text {
-  font-family: opensansbold, opensansbold-two;
+  font-family: opensansbold;
+  font-weight: bold;
   font-size: 17px;
   line-height: 20px;
-  font-weight: bold;
+  margin: 10px 0 25px 0;
 
   @include tablet {
-    width: 50%;
     font-size: 20px;
+    line-height: 25px;
   }
 
   @include desktop {
-    width: 50%;
+    font-size: 20px;
+    line-height: 25px;
   }
 }

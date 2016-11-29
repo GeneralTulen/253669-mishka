@@ -1,58 +1,76 @@
 
 .catalog__title-block {
   background-color: $bg-light-grey;
-  height: 180px;
+  height: 175px;
   width: 100%;
   margin-bottom: 30px;
   @include tablet {
-    height: 215px;
+    height: 240px;
+    margin: 0 0 65px 0;
   }
     @include desktop {
-    height: 235px;
+    height: 250px;
+    margin: 0 0 130px 0;
   }
 }
 
 .catalog__elements{
   @include desktop {
     display: flex;
+    margin: 0 20px 55px;
   }
 }
 
 .catalog__elem {
   @include content
+  padding: 0 0 30px 0;
+  cursor: pointer;
+    &:hover {
+      .catalog__description{
+      box-shadow: 4px 7px 10px hsla(0, 0%, 50%, 0.43);
+      }
+      .catalog__elem-title, .catalog__price {
+        color: $link-on-hover;
+      }
+      .catalog__icon-cart {
+        fill: $light-green;
+      }
+    }
+    &:active {
+      .catalog__description{
+      box-shadow: 2px 4px 5px hsla(0, 0%, 50%, 0.43);
+      }
+      .catalog__elem-title, .catalog__price {
+        color: $link-on-active;
+      }
+      .catalog__icon-cart {
+        fill: $green-on-active;
+      }
+    }
 
   @include tablet {
     display: flex;
     height: 335px;
-    margin-bottom: 55px;
+    margin-bottom: 21px;
   }
 
   @include desktop {
-    width: 314px;
+    width: 315px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: stretch;
+    border: 1px solid $bg-light-grey;
   }
 }
 
 .catalog__elem-pic {
   display: flex;
   @include tablet {
-    height: 335px;
   }
   @include desktop {
-    width: 100%;
-  }
-}
-
-.catalog__description {
-  padding: 0 20px;
-  margin: 0 0 30px 0;
-  border: 1px solid $bg-light-grey;
-
-  @include tablet {
-    width: 50%;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
+    height: 462px;
   }
 }
 
@@ -60,14 +78,92 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
-  margin: 30px 0 0 0;
+  margin: 25px 0 8px 0;
+
+  @include tablet {
+    font-size: 17px;
+    margin: 25px 0 5px 0;
+  }
+  @include desktop {
+    font-size: 20px;
+    margin-top: auto;
+  }
+}
+
+.catalog__description {
+  padding: 0 18px;
+  border: 1px solid $bg-light-grey;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+  @include desktop {
+    padding: 25px 0 0 0;
+    border: 1px solid transparent;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+}
+
+.catalog__parameters-b {
+  margin: 0 0 0 10px;
 }
 
 .catalog__parameters {
   font-size: 13px;
   line-height: 30px;
   color: $grey-text;
+  @include tablet {
+    font-size: 15px;
+  }
+  @include desktop {
+    font-size: 15px;
+  }
 }
 
-.catalog__parameters-b {
+.catalog__price-b {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid $bg-light-grey;
+  width: 100%;
+  margin: 18px 0 0 10px;
+  padding: 20px 0 27px 0;
+  width: 200px;
+
+  @include tablet {
+    width: 270px;
+    padding: 22px 0 25px 0;
+  }
+  @include desktop {
+    width: 260px;
+    margin: 10px 0 0 10px;
+    align-items: flex-end;
+    padding: 20px 0 25px 0;
+  }
+}
+
+.catalog__price {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+  @include tablet {
+    font-size: 17px;
+  }
+  @include desktop {
+    font-size: 17px;
+  }
+}
+
+.catalog__icon-cart {
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  fill: #d3d2d2;
+  @include desktop {
+    margin: 0 10px 0 0;
+  }
 }

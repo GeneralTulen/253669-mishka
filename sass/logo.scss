@@ -1,0 +1,58 @@
+
+.logo__mobile {
+  margin: 0 0 0 80px;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.logo__tablet {
+  display: none;
+  &:hover{
+    fill: $link-on-hover;
+  }
+  &:active {
+    fill: $link-on-active;
+  }
+  @include tablet {
+    display: flex;
+    margin-top: 5px;
+  }
+}
+
+.logo__footer {
+  display: none;
+  &:hover {
+    fill: $light-green;
+  }
+  &:active {
+    fill: $green-on-active;
+  }
+  @include tablet {
+    display: flex;
+    margin: -10px 0 0 0;
+  }
+  @include desktop {
+    display: flex;
+    margin: -10px 0 0 0;
+  }
+}
+
+.logo__desktop {
+  display: none;
+  &:hover{
+    fill: $link-on-hover;
+  }
+  &:active {
+    fill: $link-on-active;
+  }
+  @include desktop {
+    display: flex;
+    margin: 5px 0 0 45px;
+  }
+}

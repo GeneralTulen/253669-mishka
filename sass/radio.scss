@@ -1,0 +1,92 @@
+.radio {
+  display: flex;
+  flex-wrap: wrap;
+  @include tablet {
+    width: 60%;
+  }
+  @include desktop {
+    width: 100%;
+  }
+}
+
+.radio__elem {
+  width: 100%;
+}
+
+.radio__input {
+  display: none;
+}
+
+.radio__label {
+  display: flex;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  height: 55px;
+  &:hover {
+    .radio__circle {
+    }
+    .radio__stroke {
+      stroke: $light-green;
+    }
+  }
+
+  &:active {
+    .radio__stroke {
+      stroke: grey;
+    }
+  }
+  @include tablet {
+    padding: 0 0 18px 14px;
+  }
+  @include desktop {
+    padding: 0px 0 18px 0px;
+  }
+}
+
+.radio__input:checked + .radio__svg .radio__circle {
+  fill: $light-green;
+}
+
+.radio__label-text {
+    width: 100%;
+    padding: 16px 0 0 10px;
+  @include tablet {
+    padding: 19px 0 0 17px;
+    font-size: 19px;
+    line-height: 18px;
+  }
+  @include desktop {
+    font-size: 19px;
+    padding: 19px 0 0 8px;
+    line-height: 18px;
+  }
+}
+
+.radio__label-text--inter {
+}
+
+.radio__label-text--toy{
+  width: 100%;
+  padding: 28px 0 0 10px;
+  @include tablet {
+    padding: 22px 0 0 17px;
+  }
+  @include desktop {
+    padding: 22px 0 0 8px;
+  }
+}
+
+.radio__svg {
+  @include tablet {
+    transform: scale(1.35, 1.35);
+  }
+  @include desktop {
+    transform: scale(1.35, 1.35);
+  }
+}
+
+

@@ -7,42 +7,96 @@
   margin-bottom: 60px;
   padding: 0 0 35px 0;
   position: relative;
+  &:hover {
+    box-shadow: 4px 7px 10px hsla(0, 0%, 50%, 0.43);
+  }
+
+  @include tablet {
+    padding: 0 0 50px 0;
+  }
 
   @include desktop {
-    height: 450px;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-items: flex-end;
+    height: 420px;
+    margin-bottom: 105px;
   }
 }
 
-.work-process__description {
-  padding: 150px 0 0 0 ;
+.work-process__video {
+  order: 2;
+  position: relative;
+  cursor: pointer;
+  &:hover {
+    .work-process__icon-play {
+      transform: scale(1.2, 1.2);
+    }
+  }
+  &:active {
+    .work-process__icon-play {
+      transform: scale(0.8, 0.8);
+    }
+    .work-process__icon-play-fill {
+      fill: $green-on-active;
+    }
+  }
 
   @include tablet {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
+    order: 1;
   }
-
   @include desktop {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    width: 25%;
-    height: 320px;
+    position: absolute;
+    left: 0px;
   }
+}
+.work-process__icon-play {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  left: 65px;
+  cursor: pointer;
+
+  @include tablet {
+    top: 195px;
+    left: 270px;
+  }
+  @include desktop {
+    top: 190px;
+    left: 290px;
+  }
+}
+
+.work-process__icon-play-fill {
+  fill: $light-green;
+}
+
+.work-process__icon-play-stroke {
+  fill: white;
 }
 
 .work-process__title-b {
+  display: flex;
+  order:1;
+  padding: 20px 20px 25px;
+  align-items: center;
+
   @include tablet {
     width: 100%;
+    padding: 32px 0 5px 23px;
   }
 
   @include desktop {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 150px;
+    margin: 45px 140px 0 0;
+    padding: 0;
   }
 }
 
 .work-process__title {
-  padding: 0 30px;
+  padding: 0 0 0 18px;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
@@ -50,39 +104,47 @@
   @include tablet {
     font-size: 20px;
     line-height: 24px;
+    padding: 0 0 0 13px;
+  }
+  @include desktop {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 20px 0 0 0;
+  }
+}
+
+.work-process__description {
+  order: 3;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 0 0 40px;
   }
 
-
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 40px 0 0;
+    padding: 0;
+    width: 250px;
+  }
 }
 
 .work-process__text {
   font-size: 13px;
   line-height: 24px;
   color: $grey-text;
-  padding: 0 30px;
+  padding: 25px 35px;
   @include tablet {
+    font-size: 15px;
+    line-height: 30px;
+    padding: 0 0 35px 0;
   }
   @include desktop {
-  }
-}
-
-.work-process__video {
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-
-  @include tablet {
-    height: 450px;
-    display: flex;
-    position: relative;
-  }
-
-  @include desktop {
-    display: flex;
-    position: relative;
-    width: 60%;
-    height: 450px;
-    z-index: -2;
+    font-size: 15px;
+    line-height: 30px;
+    padding: 0 0 45px 0;
   }
 }
 
@@ -90,13 +152,15 @@
   font-size: 17px;
   line-height: 16px;
   color: $grey-text;
-  margin: 0 30px;
+  margin: 0 35px -5px;
   width: 190px;
   height: 50px;
   @include tablet {
-    width: 100%;
+    width: 585px;
+    margin: 0 ;
   }
   @include desktop {
-    order: 4;
+    width: 230px;
+    margin: 0;
   }
 }

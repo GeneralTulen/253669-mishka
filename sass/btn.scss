@@ -1,10 +1,19 @@
 
 .btn {
-  font-family: opensansbold, opensansbold-two;
+  font-family: opensansbold;
+  font-weight: bold;
   font-size: 18px;
   width: 100%;
   color: $grey-text;
   border: 2px solid $grey-text;
   background-color: white;
   cursor: pointer;
+  outline: none;
+  &:hover {
+    background-color: $grey-text;
+    color: white;
+  }
+  &:active {
+    color: #7C7C7C;
+  }
 }

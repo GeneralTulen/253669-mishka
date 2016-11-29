@@ -22,27 +22,97 @@
 .goods__toys {
   background-color: $dark-green;
   margin-bottom: 40px;
+
 }
 
-.goods__interior, .goods__toys {
+.goods__text {
   font-family: opensansbold, opensansbold-two;
   font-size: 19px;
   line-height: 24px;
-  padding-left: 29px;
   color: white;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 30px;
+    margin: -5px 0 0 35px;
+  }
+    @include desktop {
+    font-size: 20px;
+    line-height: 30px;
+    margin: -15px 0 0 35px;
+  }
+}
+
+.goods__interior, .goods__toys {
   height: 104px;
   width: 100%;
-  display: flex;
-  align-items: center;
   text-decoration: none;
+  display: flex;
+
+  &:hover {
+    height: 109px;
+    margin: -5px 0 0 0;
+    .goods__icon-interior, .goods__icon-toy {
+      fill: $goods-on-hover;
+    }
+  }
+  &:active {
+    .goods__text {
+      color: #8AE2D0;
+    }
+    .goods__icon-interior, .goods__icon-toy {
+      fill: $goods-on-active;
+    }
+  }
 
     @include tablet {
-      height: 115px;
-      width: 45.5%;
+      height: 125px;
+      width: 50%;
+    &:hover {
+      height: 130px;
+      margin: -5px 0 0 0;
+    }
   }
 
     @include desktop {
       height: 130px;
-      width: 47%;
+      width: 50%;
+    &:hover {
+      height: 135px;
+      margin: -5px 0 0 0;
+    }
   }
 }
+
+.goods__icon-interior {
+  fill: #3bb09d;
+}
+
+.goods__icon-toy {
+  fill: #35a999;
+}
+
+.goods__icon-interior, .goods__icon-toy {
+  @include tablet {
+    margin: 0 30px 0 0;
+  }
+  @include desktop {
+    margin: 0 30px 0 0;
+  }
+}
+
+.goods__icon-interior, .goods__icon-toy {
+  width: 60px;
+  height: 60px;
+}
+
+.goods__content {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include content;
+}
+
+
+

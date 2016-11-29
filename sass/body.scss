@@ -1,4 +1,18 @@
 body {
   font-family: opensans;
+  font-weight: normal;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
+input, button, textarea {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

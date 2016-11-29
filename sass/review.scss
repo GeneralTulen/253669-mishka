@@ -1,5 +1,5 @@
 .review {
-  border-bottom: 1px solid black;
+  position: relative;
   padding-bottom: 50px;
 
   @include tablet {
@@ -45,14 +45,14 @@
 
   @include tablet {
     order: 3;
-    padding: 18px 0;
+    padding: 35px 0;
     font-size: 17px;
   }
 
   @include desktop {
     order: 3;
     font-size: 17px;
-    padding: 18px 0;
+    padding: 35px 0;
   }
 }
 
@@ -84,8 +84,9 @@
 }
 
 .review__btn-arrow {
+  display: flex;
   height: 50px;
-  padding: 5px 0 30px 0;
+  padding: 0 0 40px 0;
   background-color: white;
 
   @include tablet {
@@ -102,9 +103,22 @@
 
 .review__btn-arrow--left, .review__btn-arrow--right {
   background-color: #fff;
-  width: 49%;
-  border: 1px solid $border-color;
+  width: 50%;
   padding: 10px 0;
+  border: 1px solid $border-color;
+  cursor: pointer;
+  &:hover {
+    .review__icon-left-arrow, .review__icon-right-arrow {
+      fill: #666666;
+    }
+  }
+
+  &:active {
+    .review__icon-left-arrow, .review__icon-right-arrow {
+      fill: #B2B2B2;
+    }
+  }
+
   @include tablet {
     width: 48%;
     border: 1px solid transparent;
@@ -113,6 +127,11 @@
     width: 48%;
     border: 1px solid transparent;
   }
+}
+
+.review__icon-left-arrow, .review__icon-right-arrow {
+  width: 50px;
+  height: 27px;
 }
 
 .review__btn-write {
@@ -129,5 +148,6 @@
     width: 175px;
     height: 55px;
     padding: 0;
+    margin: 10px 0 0 0;
   }
 }

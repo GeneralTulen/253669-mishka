@@ -33,6 +33,12 @@
 
 .under-header-list__elem--bold {
   display: none;
+  &:hover{
+    color: $link-on-hover;
+  }
+  &:active {
+    color: $link-on-active;
+  }
 
   @include tablet {
     display: none;
