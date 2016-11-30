@@ -15,17 +15,26 @@
 }
 
 .toggle-menu__item {
-  font-family: opensansbold;
+  font-family: open_sansbold;
   font-size: 17px;
   background-color: #fff;
   border-bottom: 1px solid $border-color;
   display: flex;
   padding: 25px 0 25px 70px;
   &:active {
-    background-color: #fff;
+    background-color: #f6f6f6;
+    color: rgb(86, 86, 86);
   }
 }
 
 .toggle-menu.open {
   display: block;
+}
+
+.toggle__icon-search, .toggle__icon-cart {
+  fill: #d3d2d2;
+  width: 20px;
+  height: 20px;
+  text-align: left;
+  margin: 0 20px 0 -40px;
 }

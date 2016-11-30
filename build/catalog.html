@@ -13,25 +13,25 @@
 <body>
   <div class="container">
     <header class="page-header">
-      <div class="page-header__content">
-       <a href="#" class="logo">
+       <div class="page-header__content">
+       <a href="index.html" class="logo">
          <svg width="100" height="35" role="img" class="logo__mobile">
             <use xlink:href="img/svgcombine-file.svg#logo-mobile"></use>
           </svg>
        </a>
 
-       <a href="#" class="logo">
-          <svg width="110" height="45" role="img" class="logo__tablet">
-            <use xlink:href="img/svgcombine-file.svg#logo-tablet"></use>
-          </svg>
+       <a href="index.html" class="logo">
+        <svg width="110" height="45" role="img" class="logo__tablet">
+          <use xlink:href="img/svgcombine-file.svg#logo-tablet"></use>
+        </svg>
        </a>
 
         <nav class="page-header__nav">
          <ul class="page-header__nav-list">
-           <li class="page-header__nav-elem"><a href="#" class="page-header__nav-link">Каталог товаров</a></li>
-           <li class="page-header__nav-elem"><a href="#" class="page-header__nav-link">Вязание на заказ</a></li>
+           <li class="page-header__nav-elem"><a href="catalog.html" class="page-header__nav-link">Каталог товаров</a></li>
+           <li class="page-header__nav-elem"><a href="form.html" class="page-header__nav-link">Вязание на заказ</a></li>
          </ul>
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
               <svg width="150" height="80" role="img" class="logo__desktop">
               <use xlink:href="img/svgcombine-file.svg#logo-desktop"></use>
             </svg>
@@ -48,7 +48,6 @@
               </svg>
            <p class="page-header__cart">Корзина: пока пуста</p>
            </a>
-           </a>
         </nav>
 
         <div class="nav-menu-mobile">
@@ -58,14 +57,22 @@
             <a href="#" class="toggle-menu__link">
               <li class="toggle-menu__item">Каталог товаров</li>
             </a>
-            <a href="#" class="toggle-menu__link">
+            <a href="form.html" class="toggle-menu__link">
               <li class="toggle-menu__item">Вязание на заказ</li>
             </a>
             <a href="#" class="toggle-menu__link">
-              <li class="toggle-menu__item">Поиск по сайту</li>
+              <li class="toggle-menu__item">
+               <svg role="img" class="toggle__icon-search">
+                <use xlink:href="img/svgcombine-file.svg#icon-search"></use>
+              </svg>
+              Поиск по сайту</li>
             </a>
             <a href="#" class="toggle-menu__link">
-              <li class="toggle-menu__item">Корзина: пока пуста</li>
+              <li class="toggle-menu__item">
+              <svg role="img" class="toggle__icon-cart">
+                <use xlink:href="img/svgcombine-file.svg#icon-cart"></use>
+              </svg>
+              Корзина: пока пуста</li>
             </a>
           </ul>
         </div>
@@ -184,7 +191,9 @@
 
           <div class="work-process__description">
             <p class="work-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-            <button type="button" class="btn work-process__make-order">СДЕЛАТЬ ЗАКАЗ</button>
+            <a href="form.html">
+              <button type="button" class="btn work-process__make-order">СДЕЛАТЬ ЗАКАЗ</button
+            </a>
           </div>
         </div>
       </div>
@@ -192,7 +201,7 @@
     <footer class="page-footer">
         <div class="page-footer__grey-bg">
           <div class="page-footer__grey-bg-content">
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
               <svg width="100" height="45" role="img" class="logo__footer">
                   <use xlink:href="img/svgcombine-file.svg#logo-footer">
                   </use>
