@@ -18,8 +18,11 @@
   text-align: center;
   width: 85%;
   margin: 0 auto;
-  padding-top: 70px;
+  padding: 0 0 125px 0;
   font-size: 27px;
+  z-index: -1;
+  position: relative;
+
 
   @include tablet {
     padding-top: 100px;
@@ -35,10 +38,10 @@
 }
 
 .title--good-of-the-week {
-  padding: 60px 0 0 0;
+  padding: 20px 0 0 0;
 
   @include tablet {
-    padding: 0;
+    padding: 40px 0 0 0;
   }
   @include desktop {
     padding: 55px 0 0 175px;
@@ -68,9 +71,10 @@
   text-align: center;
   position: relative;
   top: 70px;
+  z-index: -1;
   @include tablet {
     top: 45px;
-
+    padding: 720px 0 0 0;
   }
   @include desktop {
     top: 40px;
@@ -82,11 +86,14 @@
   text-align: center;
   position: relative;
   top: 70px;
+  z-index: -1;
   @include tablet {
     top: 45px;
-
+    padding: 780px 0 0 0;
+    z-index: 1;
   }
   @include desktop {
     top: 40px;
+    z-index: 1;
   }
 }

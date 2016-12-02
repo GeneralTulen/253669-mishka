@@ -5,12 +5,12 @@
 }
 .zigzag-fill--goods {
   @include tablet {
-    top: 725px;
+    top: 815px;
     width: $tablet-width;
     height: 40px;
   }
   @include desktop {
-    top: 725px;
+    top: 817px;
     width: $desktop-width;
     height: 40px;
   }
@@ -24,7 +24,7 @@
   }
   @include desktop {
     width: $desktop-width;
-    top: 330px;
+    top: 315px;
     height: 40px;
   }
 }
@@ -32,12 +32,12 @@
 .zigzag-fill--form {
   @include tablet {
     width: $tablet-width;
-    top: 305px;
+    top: 215px;
     height: 40px;
   }
   @include desktop {
     width: $desktop-width;
-    top: 335px;
+    top: 230px;
     height: 40px;
   }
 }

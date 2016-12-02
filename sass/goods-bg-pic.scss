@@ -5,6 +5,7 @@
   height: 350px;
   margin-bottom: 105px;
   position: relative;
+  z-index: -2;
 
   @include retina {
     background: url(../img/hero-mobile@2x.jpg) no-repeat center;
@@ -30,9 +31,13 @@
     @include retina {
       background: url(../img/hero-desktop@2x.jpg) no-repeat center;
     }
+  }
 }
 
+.good-bg-pic__content {
+  margin-top: -390px;
+  @include desktop {
+    margin-top: -805px;
+  }
 }
-
-
 

@@ -1,6 +1,6 @@
 .page-header {
+  margin-top: -5px;
   height: 70px;
-  display: flex;
   align-items: center;
   border-bottom: 1px solid $border-color;
   font-family: open_sansbold;
@@ -21,9 +21,14 @@
 .page-header__content {
   @include content
   position: relative;
-  display: flex;
   align-items: center;
   height: inherit;
+  background-color: white;
+  width: 320px;
+  z-index: 2;
+  @include tablet {
+    display: flex;
+  }
 }
 
 .page-header__nav-link, .page-header__search, .page-header__cart-b {
@@ -46,6 +51,13 @@
   justify-content: space-between;
   align-items: center;
   height: inherit;
+  margin-top: -50px;
+  @include tablet {
+    margin-top: 0;
+  }
+  @include desktop {
+    margin-top: 0;
+  }
 }
 
 .page-header__search, .page-header__cart-b {

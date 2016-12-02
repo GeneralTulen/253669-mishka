@@ -1,17 +1,17 @@
 .goods {
   display: flex;
-  padding-top: 120px;
   flex-wrap: wrap;
+
 
   @include tablet {
     @include content
-    padding-top: 375px;
+    padding-top: 250px;
     width: 100%;
   }
 
   @include desktop {
     @include content
-    padding: 360px 0px;
+    padding: 230px 0 60px 0px;
   }
 }
 
@@ -48,6 +48,7 @@
   width: 100%;
   text-decoration: none;
   display: flex;
+  margin: 0;
 
   &:hover {
     height: 109px;

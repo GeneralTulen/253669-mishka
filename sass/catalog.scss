@@ -1,16 +1,19 @@
 
 .catalog__title-block {
+  position: relative;
   background-color: $bg-light-grey;
   height: 175px;
   width: 100%;
   margin-bottom: 30px;
+  z-index: -2;
   @include tablet {
-    height: 240px;
+    padding: 70px 0 0 0;
     margin: 0 0 65px 0;
   }
     @include desktop {
     height: 250px;
     margin: 0 0 130px 0;
+    z-index: 0;
   }
 }
 

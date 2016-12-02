@@ -17,6 +17,7 @@
        <a href="index.html" class="logo">
          <svg width="100" height="35" role="img" class="logo__mobile">
             <use xlink:href="img/svgcombine-file.svg#logo-mobile"></use>
+
           </svg>
        </a>
 
@@ -49,12 +50,13 @@
            <p class="page-header__cart">Корзина: пока пуста</p>
            </a>
         </nav>
+    </div>
 
         <div class="nav-menu-mobile">
-          <span class="icon-menu-open"></span>
+          <span class="toggle-menu__open"></span>
 
           <ul class="toggle-menu">
-            <a href="#" class="toggle-menu__link">
+            <a href="catalog.html" class="toggle-menu__link">
               <li class="toggle-menu__item">Каталог товаров</li>
             </a>
             <a href="form.html" class="toggle-menu__link">
@@ -76,8 +78,8 @@
             </a>
           </ul>
         </div>
-      </div>
-    </header>
+
+      </header>
     <main>
       <div class="catalog">
         <div class="catalog__title-block">
@@ -92,7 +94,6 @@
       </div>
       <div class="zigzag-fill zigzag-fill--catalog"></div>
         <div class="catalog__elements">
-        <!-- <a href="#"> -->
           <div class="catalog__elem">
             <picture class="catalog__elem-pic">
               <source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg, img/photo-1-desktop@2x.jpg 2x">
@@ -203,8 +204,7 @@
           <div class="page-footer__grey-bg-content">
             <a href="index.html" class="logo">
               <svg width="100" height="45" role="img" class="logo__footer">
-                  <use xlink:href="img/svgcombine-file.svg#logo-footer">
-                  </use>
+                  <use xlink:href="img/svgcombine-file.svg#logo-footer"></use>
               </svg>
             </a>
             <div class="social-links">
@@ -242,8 +242,8 @@
       </footer>
   </div>
     <script>
-    $('.icon-menu-open').click (function(){
-    $(".icon-menu-open, .toggle-menu").toggleClass('open');
+    $('.toggle-menu__open').click (function(){
+    $(".toggle-menu__open, .toggle-menu").toggleClass('open');
     });
     </script>
 </body>

@@ -49,9 +49,10 @@
            <p class="page-header__cart">Корзина: пока пуста</p>
            </a>
         </nav>
+    </div>
 
         <div class="nav-menu-mobile">
-          <span class="icon-menu-open"></span>
+          <span class="toggle-menu__open"></span>
 
           <ul class="toggle-menu">
             <a href="catalog.html" class="toggle-menu__link">
@@ -77,10 +78,11 @@
           </ul>
         </div>
 
-        </div>
       </header>
       <main>
-        <div class="goods-bg-pic">
+
+        <div class="goods-bg-pic"></div>
+        <div class="good-bg-pic__content">
           <div class="under-header-list">
             <div class="under-header-list__left-side">
               <a href="#" class="under-header-list__elem under-header-list__elem--bold">Новые поступления</a>
@@ -109,6 +111,11 @@
           </div>
             <div class="zigzag-fill zigzag-fill--goods"></div>
         </div>
+
+
+
+
+
           <div class="good-of-the-week">
             <div class="good-of-the-week__content">
 
@@ -278,8 +285,8 @@
     </div>
 
     <script>
-    $('.icon-menu-open').click (function(){
-    $(".icon-menu-open, .toggle-menu").toggleClass('open');
+    $('.toggle-menu__open').click (function(){
+    $(".toggle-menu__open, .toggle-menu").toggleClass('open');
     });
     </script>
   </body>
