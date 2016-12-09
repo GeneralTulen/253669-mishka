@@ -1,7 +1,7 @@
 
 .page-footer {
   @include desktop {
-    // position: relative;
+    position: relative;
   }
 }
 
@@ -27,15 +27,6 @@
   }
 }
 
-.page-footer__grey-bg-content--catalog {
-  @include desktop {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid red;
-    width: 100%;
-  }
-}
 
 .page-footer__write-to-us-b {
   @include content

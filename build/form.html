@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/style.min.css">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
    </script>
+   <script defer src="node_modules/svgxuse/svgxuse.js"></script>
 </head>
 <body>
   <div class="container">
@@ -53,7 +54,6 @@
 
         <div class="nav-menu-mobile">
           <span class="toggle-menu__open"></span>
-
           <ul class="toggle-menu">
             <a href="catalog.html" class="toggle-menu__link">
               <li class="toggle-menu__item">Каталог товаров</li>
@@ -134,7 +134,7 @@
             </div>
             <div class="checkbox">
               <div class="checkbox__elem">
-                <label class="checkbox__label">
+                <label class="checkbox__label" onmousedown="return false" onselectstart="return false">
                   <input class="checkbox__input" type="checkbox" checked>
                   <svg width="47" height="47" role="img" class="checkbox__icon">
                     <use x="7" y="6" xlink:href="img/svgcombine-file.svg#icon-tick" width="28" height="28"></use>
@@ -155,7 +155,7 @@
                 </label>
               </div>
               <div class="checkbox__elem">
-                <label class="checkbox__label">
+                <label class="checkbox__label" >
                   <input class="checkbox__input" type="checkbox">
                   <svg width="47" height="47" role="img" class="checkbox__icon">
                     <use x="7" y="6" xlink:href="img/svgcombine-file.svg#icon-tick" width="28" height="28"></use>
@@ -205,7 +205,7 @@
             </div>
             <div class="form__personal-info">
               <div class="form__personal-info-elem">
-                <label class="form__lable-text">Имя:</label>
+                <label class="form__lable-text" >Имя:</label>
                 <input class="input input--text" type="text" placeholder="Введите ваше имя">
               </div>
               <div class="form__personal-info-elem">
